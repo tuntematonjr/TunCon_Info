@@ -4,9 +4,20 @@
 private _category = ["Tun Utilities - Uncon Info", "Uncon Info"];
 
 [
-    QGVAR(allowUnconInfo),
+    QGVAR(enableUnconInfo),
     "CHECKBOX",
-    ["Enable uncon info", "Enanbles uncon to know whats going around them. Own vitals and if friendlies nearby."],
+    [localize "STR_TunCon_CBA_enableUnconInfo", localize "STR_TunCon_CBA_enableUnconInfoTooltip"],
+    _category,
+    true,
+    1,
+    {},
+    true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(enableShowIfTreated),
+    "CHECKBOX",
+    [localize "STR_TunCon_CBA_enableShowIfTreated", localize "STR_TunCon_CBA_enableShowIfTreatedTooltip"],
     _category,
     true,
     1,
@@ -17,7 +28,7 @@ private _category = ["Tun Utilities - Uncon Info", "Uncon Info"];
 [
     QGVAR(allowNearestUnit),
     "CHECKBOX",
-    ["Enable showing nearest unit", "Enanbles uncon to know whats going around them. Own vitals and if friendlies nearby."],
+    [localize "STR_TunCon_CBA_enableShowingNearestUnit", localize "STR_TunCon_CBA_enableShowingNearestUnitTooltip"],
     _category,
     true,
     1,
@@ -28,7 +39,7 @@ private _category = ["Tun Utilities - Uncon Info", "Uncon Info"];
 [
     QGVAR(allowNearestUnitDistanceShown),
     "CHECKBOX",
-    ["Enable showing nearest unit distance", "Enable showing colsest friendlies distance"],
+    [localize "STR_TunCon_CBA_enableShowingDistance", localize "STR_TunCon_CBA_enableShowingDistanceTooltip"],
     _category,
     true,
     1,
@@ -39,7 +50,7 @@ private _category = ["Tun Utilities - Uncon Info", "Uncon Info"];
 [
     QGVAR(unconInfoNearestUnitDistance), 
     "SLIDER", 
-    ["Distance for looking closest friendly", "Distance in meters to find nearest fiendly and medic"], 
+    [localize "STR_TunCon_CBA_distanceToLookFriendlies", localize "STR_TunCon_CBA_distanceToLookFriendliesTooltip"], 
     _category,
     [10, 100, 50, 0],
     1,
@@ -54,10 +65,25 @@ private _category = ["Tun Utilities - Uncon Info", "Uncon Info"];
 [
     QGVAR(noFriendliesNearbyText), 
     "EDITBOX", 
-    ["Text if no friendlies nearby and no vitals", "Text what is shown when player has bad vitals and no friendlies nearby"], 
+    [localize "STR_TunCon_CBA_noFriends", localize "STR_TunCon_CBA_noFriendsTooltip"], 
     _category,
     "Your current sitsuation is not looking very good, you can try and wait or feel free to just press Esc -> Respawn.",
     1,
     {},
+    true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(updateInterval), 
+    "SLIDER", 
+    [localize "STR_TunCon_CBA_updateInterval", localize "STR_TunCon_CBA_updateIntervalTooltip"], 
+    _category,
+    [5, 60, 5, 0],
+    1,
+    { 
+        params ["_value"];
+        _value = round _value;
+        GVAR(updateInterval) = _value; 
+    },
     true
 ] call CBA_Settings_fnc_init;
