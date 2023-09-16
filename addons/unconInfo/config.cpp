@@ -15,7 +15,7 @@ class CfgPatches
 
 class Extended_PostInit_EventHandlers {
     class Tun_unconInfo {
-        init = QUOTE(call COMPILE_FILE(XEH_postInit));
+        clientInit = QUOTE(call COMPILE_FILE(XEH_clientInit));
     };
 };
 
