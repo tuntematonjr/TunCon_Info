@@ -20,7 +20,7 @@ GVAR(isBeingHelped) = false;
 
 {// Based on FPARMA version, credits to them for it. Modified to use uncon info text.
 	["ace_medical_treatment_" + _x, {
-		if (lifeState ace_player == "INCAPACITATED") then {
+		if (lifeState ace_player == "INCAPACITATED" && GVAR(enableShowIfTreated)) then {
 			GVAR(isBeingHelped) = true;
 		};
 	}] call CBA_fnc_addEventHandler;
