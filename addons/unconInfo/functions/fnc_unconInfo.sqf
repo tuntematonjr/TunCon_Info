@@ -14,29 +14,29 @@
  */
 #include "script_component.hpp"
 
-private _text ="You sense that<br/>";
+private _text = localize "STR_TunCon_firstLine" + "<br/>";
 private _bleeding = player getvariable ["ace_medical_woundBleeding", 0];
 if (_bleeding > 0) then {
-	_text = _text + "You are bleeding<br/>";
+	_text = _text + localize "STR_TunCon_isBleeding" + "<br/>";
 };
 
 if (player getvariable ["ace_medical_heartRate", 0] > 0) then {
-	_text = _text + "You still have pulse<br/>";
+	_text = _text + localize "STR_TunCon_hasPulse" + "<br/>";
 };
 
 if (player getvariable ["ace_medical_inCardiacArrest", false]) then {
-	_text = _text + "You are in cardiac arrest<br/>";
+	_text = _text + localize "STR_TunCon_inCardiacArrest" + "<br/>";
 };
 
 private _hasStableVitals = [player] call ace_medical_status_fnc_hasStableVitals;
 if (_hasStableVitals) then {
-	_text = _text + "You have stable vitals (you can wake up)<br/>";
+	_text = _text + localize "STR_TunCon_hasStableVitals" + "<br/>";
 } else {
-	_text = _text + "You don't have stable vitals (you can't wake up)<br/>";
+	_text = _text + localize "STR_TunCon_notStableVitals" + "<br/>";
 };
 
 if ([player, "Epinephrine"] call ace_medical_status_fnc_getMedicationCount > 0) then {
-	_text = _text + "You have epipherine in your system (huge increase on waking up)<br/>";
+	_text = _text + localize "STR_TunCon_notStableVitals" + "<br/>";
 };
 
 if (GVAR(allowNearestUnit)) then {
@@ -67,29 +67,35 @@ if (GVAR(allowNearestUnit)) then {
 		if (_closestMedic isNotEqualTo objNull) then {
 			if (_closestUnit isEqualTo _closestMedic) then {
 				if (_nearestUnitDistanceAllowed) then {
-					_text = format["%1Closest unit is %2 and is also medic (%3m)",_text, name _closestUnit,  _closestUnitDistance];
+					_text = format [localize "STR_TunCon_closestUnitWithDistance",_text, name _closestUnit,  _closestUnitDistance];
 				} else {
-					_text = format["%1Closest unit is %2 and is also medic",_text, name _closestUnit];
+					_text = format [localize "STR_TunCon_closestUnitWithOutDistance",_text, name _closestUnit];
 				};
 			} else {
 				if (_nearestUnitDistanceAllowed) then {
-					_text = format["%1Closest unit is %2 (%3m)<br/>Closest medic is %4 (%5m)",_text, name _closestUnit,  _closestUnitDistance, name _closestMedic,  _closestMedicDistance];
+					_text = format [localize "STR_TunCon_closestUnitAndMedicWithDistance",_text, name _closestUnit,  _closestUnitDistance, name _closestMedic,  _closestMedicDistance];
 				} else {
-					_text = format["%1Closest unit is %2<br/>Closest medic is %3",_text, name _closestUnit, name _closestMedic];
+					_text = format [localize "STR_TunCon_closestUnitAndMedicWithOutDistance",_text, name _closestUnit, name _closestMedic];
 				};
 			};
 		} else {
 			if (_nearestUnitDistanceAllowed) then {
-				_text = format["%1Closest unit is %2 (%3m), but no medics nearby",_text, name _closestUnit,  _closestUnitDistance];
+				_text = format [localize "STR_TunCon_closestUnitNoMedicWithDistance",_text, name _closestUnit,  _closestUnitDistance];
 			} else {
-				_text = format["%1Closest unit is %2, but no medics nearby",_text, name _closestUnit];
+				_text = format [localize "STR_TunCon_closestUnitNoMedicWithOutDistance",_text, name _closestUnit];
 			};
 		};
+
+		if (GVAR(isBeingHelped)) then {
+			GVAR(isBeingHelped) = false;
+			_text = _text + "<br/>" + localize "STR_TunCon_isBeingHelpedText";
+		};
+
 	} else {
-		_text = _text + "There are no friendlies nearby";
+		_text = _text + localize "STR_TunCon_noFriends";
 
 		if (_bleeding > 0 && !(_hasStableVitals)) then {
-			_text = _text + "<br/>"+ GVAR(noFriendliesNearbyText);
+			_text = _text + "<br/>" + GVAR(noFriendliesNearbyText);
 		};
 	};
 };
