@@ -74,17 +74,17 @@
         <Russian>You don't have stable vitals (you can't wake up)</Russian>
         <German>You don't have stable vitals (you can't wake up)</German>
       </Key>
-      <Key ID="STR_TunCon_hasEpipherine">
-        <Original>You have epipherine in your system (huge increase on waking up)</Original>
-        <English>You have epipherine in your system (huge increase on waking up)</English>
-        <Czech>You have epipherine in your system (huge increase on waking up)</Czech>
-        <French>You have epipherine in your system (huge increase on waking up)</French>
+      <Key ID="STR_TunCon_hasepinEphrine">
+        <Original>You have epinephrine in your system (A huge increase in the chance of waking up.)</Original>
+        <English>You have epinephrine in your system (A huge increase in the chance of waking up.)</English>
+        <Czech>You have epinephrine in your system (A huge increase in the chance of waking up.)</Czech>
+        <French>You have epinephrine in your system (A huge increase in the chance of waking up.)</French>
         <Spanish>Tienes epinefrina en tu sistema (tus probabilidades de despertar aumentan)</Spanish>
-        <Italian>You have epipherine in your system (huge increase on waking up)</Italian>
-        <Polish>You have epipherine in your system (huge increase on waking up)</Polish>
-        <Portuguese>You have epipherine in your system (huge increase on waking up)</Portuguese>
-        <Russian>You have epipherine in your system (huge increase on waking up)</Russian>
-        <German>You have epipherine in your system (huge increase on waking up)</German>
+        <Italian>You have epinephrine in your system (A huge increase in the chance of waking up.)</Italian>
+        <Polish>You have epinephrine in your system (A huge increase in the chance of waking up.)</Polish>
+        <Portuguese>You have epinephrine in your system (A huge increase in the chance of waking up.)</Portuguese>
+        <Russian>You have epinephrine in your system (A huge increase in the chance of waking up.)</Russian>
+        <German>You have epinephrine in your system (A huge increase in the chance of waking up.)</German>
       </Key>
       <Key ID="STR_TunCon_noFriends">
         <Original>There are no friendlies nearby</Original>

@@ -36,7 +36,7 @@ if (_hasStableVitals) then {
 };
 
 if ([player, "Epinephrine"] call ace_medical_status_fnc_getMedicationCount > 0) then {
-	_text = _text + localize "STR_TunCon_notStableVitals" + "<br/>";
+	_text = _text + localize "STR_TunCon_hasepinEphrine" + "<br/>";
 };
 
 if (GVAR(allowNearestUnit)) then {
