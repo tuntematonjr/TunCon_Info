@@ -221,16 +221,16 @@
         <German>Enable showing nearest unit</German>
       </Key>
       <Key ID="STR_TunCon_CBA_enableShowingNearestUnitTooltip">
-        <Original>Enables showig if there is nearby friendly units</Original>
-        <English>Enables showig if there is nearby friendly units</English>
-        <Czech>Enables showig if there is nearby friendly units</Czech>
-        <French>Enables showig if there is nearby friendly units</French>
-        <Spanish>Enables showig if there is nearby friendly units</Spanish>
-        <Italian>Enables showig if there is nearby friendly units</Italian>
-        <Polish>Enables showig if there is nearby friendly units</Polish>
-        <Portuguese>Enables showig if there is nearby friendly units</Portuguese>
-        <Russian>Enables showig if there is nearby friendly units</Russian>
-        <German>Enables showig if there is nearby friendly units</German>
+        <Original>Enables showing if there is nearby friendly units</Original>
+        <English>Enables showing if there is nearby friendly units</English>
+        <Czech>Enables showing if there is nearby friendly units</Czech>
+        <French>Enables showing if there is nearby friendly units</French>
+        <Spanish>Enables showing if there is nearby friendly units</Spanish>
+        <Italian>Enables showing if there is nearby friendly units</Italian>
+        <Polish>Enables showing if there is nearby friendly units</Polish>
+        <Portuguese>Enables showing if there is nearby friendly units</Portuguese>
+        <Russian>Enables showing if there is nearby friendly units</Russian>
+        <German>Enables showing if there is nearby friendly units</German>
       </Key>
       <Key ID="STR_TunCon_CBA_enableShowingDistance">
         <Original>Enable showing nearest unit distance</Original>
