@@ -16,27 +16,28 @@
 
 private _text = localize "STR_TunCon_firstLine" + "<br/>";
 private _bleeding = player getvariable ["ace_medical_woundBleeding", 0];
+private _hasStableVitals = [player] call ace_medical_status_fnc_hasStableVitals;
+
 if (_bleeding > 0) then {
 	_text = _text + localize "STR_TunCon_isBleeding" + "<br/>";
 };
 
-if (player getvariable ["ace_medical_heartRate", 0] > 0) then {
-	_text = _text + localize "STR_TunCon_hasPulse" + "<br/>";
-};
-
 if (player getvariable ["ace_medical_inCardiacArrest", false]) then {
 	_text = _text + localize "STR_TunCon_inCardiacArrest" + "<br/>";
-};
-
-private _hasStableVitals = [player] call ace_medical_status_fnc_hasStableVitals;
-if (_hasStableVitals) then {
-	_text = _text + localize "STR_TunCon_hasStableVitals" + "<br/>";
 } else {
-	_text = _text + localize "STR_TunCon_notStableVitals" + "<br/>";
-};
+	if (player getvariable ["ace_medical_heartRate", 0] > 0) then {
+		_text = _text + localize "STR_TunCon_hasPulse" + "<br/>";
+	};
 
-if ([player, "Epinephrine"] call ace_medical_status_fnc_getMedicationCount > 0) then {
-	_text = _text + localize "STR_TunCon_hasepinEphrine" + "<br/>";
+	if (_hasStableVitals) then {
+		_text = _text + localize "STR_TunCon_hasStableVitals" + "<br/>";
+
+		if ([player, "Epinephrine"] call ace_medical_status_fnc_getMedicationCount > 0) then {
+			_text = _text + localize "STR_TunCon_hasepinEphrine" + "<br/>";
+		};
+	} else {
+		_text = _text + localize "STR_TunCon_notStableVitals" + "<br/>";
+	};
 };
 
 if (GVAR(allowNearestUnit)) then {
