@@ -67,7 +67,7 @@ private _category = ["Tun Utilities - Uncon Info", "Uncon Info"];
     "EDITBOX", 
     [localize "STR_TunCon_CBA_noFriends", localize "STR_TunCon_CBA_noFriendsTooltip"], 
     _category,
-    "Your current sitsuation is not looking very good, you can try and wait or feel free to just press Esc -> Respawn.",
+    "Your current situation is not looking very good, you could wait or feel free to just press Esc -> Respawn.",
     1,
     {},
     true

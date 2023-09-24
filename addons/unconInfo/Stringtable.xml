@@ -63,28 +63,28 @@
         <German>You have stable vitals (you can wake up)</German>
       </Key>
       <Key ID="STR_TunCon_notStableVitals">
-        <Original>You don't have stable vitals (you can't wake up)</Original>
-        <English>You don't have stable vitals (you can't wake up)</English>
-        <Czech>You don't have stable vitals (you can't wake up)</Czech>
-        <French>You don't have stable vitals (you can't wake up)</French>
+        <Original>You don't have stable vitals (This prevents you from waking up)</Original>
+        <English>You don't have stable vitals (This prevents you from waking up)</English>
+        <Czech>You don't have stable vitals (This prevents you from waking up)</Czech>
+        <French>You don't have stable vitals (This prevents you from waking up)</French>
         <Spanish>No tienes las vitales estables (No puedes despertar)</Spanish>
-        <Italian>You don't have stable vitals (you can't wake up)</Italian>
-        <Polish>You don't have stable vitals (you can't wake up)</Polish>
-        <Portuguese>You don't have stable vitals (you can't wake up)</Portuguese>
-        <Russian>You don't have stable vitals (you can't wake up)</Russian>
-        <German>You don't have stable vitals (you can't wake up)</German>
+        <Italian>You don't have stable vitals (This prevents you from waking up)</Italian>
+        <Polish>You don't have stable vitals (This prevents you from waking up)</Polish>
+        <Portuguese>You don't have stable vitals (This prevents you from waking up)</Portuguese>
+        <Russian>You don't have stable vitals (This prevents you from waking up)</Russian>
+        <German>You don't have stable vitals (This prevents you from waking up)</German>
       </Key>
       <Key ID="STR_TunCon_hasepinEphrine">
-        <Original>You have epinephrine in your system (A huge increase in the chance of waking up.)</Original>
-        <English>You have epinephrine in your system (A huge increase in the chance of waking up.)</English>
-        <Czech>You have epinephrine in your system (A huge increase in the chance of waking up.)</Czech>
-        <French>You have epinephrine in your system (A huge increase in the chance of waking up.)</French>
+        <Original>You have epinephrine in your system (Significantly higher chance of waking up)</Original>
+        <English>You have epinephrine in your system (Significantly higher chance of waking up)</English>
+        <Czech>You have epinephrine in your system (Significantly higher chance of waking up)</Czech>
+        <French>You have epinephrine in your system (Significantly higher chance of waking up)</French>
         <Spanish>Tienes epinefrina en tu sistema (tus probabilidades de despertar aumentan)</Spanish>
-        <Italian>You have epinephrine in your system (A huge increase in the chance of waking up.)</Italian>
-        <Polish>You have epinephrine in your system (A huge increase in the chance of waking up.)</Polish>
-        <Portuguese>You have epinephrine in your system (A huge increase in the chance of waking up.)</Portuguese>
-        <Russian>You have epinephrine in your system (A huge increase in the chance of waking up.)</Russian>
-        <German>You have epinephrine in your system (A huge increase in the chance of waking up.)</German>
+        <Italian>You have epinephrine in your system (Significantly higher chance of waking up)</Italian>
+        <Polish>You have epinephrine in your system (Significantly higher chance of waking up)</Polish>
+        <Portuguese>You have epinephrine in your system (Significantly higher chance of waking up)</Portuguese>
+        <Russian>You have epinephrine in your system (Significantly higher chance of waking up)</Russian>
+        <German>You have epinephrine in your system (Significantly higher chance of waking up)</German>
       </Key>
       <Key ID="STR_TunCon_noFriends">
         <Original>There are no friendlies nearby</Original>
@@ -99,28 +99,28 @@
         <German>There are no friendlies nearby</German>
       </Key>
       <Key ID="STR_TunCon_closestUnitWithDistance">
-        <Original>%1Closest unit is %2 and is also medic (%3m)</Original>
-        <English>%1Closest unit is %2 and is also medic (%3m)</English>
-        <Czech>%1Closest unit is %2 and is also medic (%3m)</Czech>
-        <French>%1Closest unit is %2 and is also medic (%3m)</French>
+        <Original>%1Closest unit is %2 and %2 medic (%3m)</Original>
+        <English>%1Closest unit is %2 and %2 medic (%3m)</English>
+        <Czech>%1Closest unit is %2 and %2 medic (%3m)</Czech>
+        <French>%1Closest unit is %2 and %2 medic (%3m)</French>
         <Spanish>%1El aliado mas cercano es %2 y es medico (%3m)</Spanish>
-        <Italian>%1Closest unit is %2 and is also medic (%3m)</Italian>
-        <Polish>%1Closest unit is %2 and is also medic (%3m)</Polish>
-        <Portuguese>%1Closest unit is %2 and is also medic (%3m)</Portuguese>
-        <Russian>%1Closest unit is %2 and is also medic (%3m)</Russian>
-        <German>%1Closest unit is %2 and is also medic (%3m)</German>
+        <Italian>%1Closest unit is %2 and %2 medic (%3m)</Italian>
+        <Polish>%1Closest unit is %2 and %2 medic (%3m)</Polish>
+        <Portuguese>%1Closest unit is %2 and %2 medic (%3m)</Portuguese>
+        <Russian>%1Closest unit is %2 and %2 medic (%3m)</Russian>
+        <German>%1Closest unit is %2 and %2 medic (%3m)</German>
       </Key>
       <Key ID="STR_TunCon_closestUnitWithOutDistance">
-        <Original>%1Closest unit is %2 and is also medic</Original>
-        <English>%1Closest unit is %2 and is also medic</English>
-        <Czech>%1Closest unit is %2 and is also medic</Czech>
-        <French>%1Closest unit is %2 and is also medic</French>
+        <Original>%1Closest unit is %2 and %2 medic</Original>
+        <English>%1Closest unit is %2 and %2 medic</English>
+        <Czech>%1Closest unit is %2 and %2 medic</Czech>
+        <French>%1Closest unit is %2 and %2 medic</French>
         <Spanish>%1El aliado mas cercano es %2 y tambien es medico</Spanish>
-        <Italian>%1Closest unit is %2 and is also medic</Italian>
-        <Polish>%1Closest unit is %2 and is also medic</Polish>
-        <Portuguese>%1Closest unit is %2 and is also medic</Portuguese>
-        <Russian>%1Closest unit is %2 and is also medic</Russian>
-        <German>%1Closest unit is %2 and is also medic</German>
+        <Italian>%1Closest unit is %2 and %2 medic</Italian>
+        <Polish>%1Closest unit is %2 and %2 medic</Polish>
+        <Portuguese>%1Closest unit is %2 and %2 medic</Portuguese>
+        <Russian>%1Closest unit is %2 and %2 medic</Russian>
+        <German>%1Closest unit is %2 and %2 medic</German>
       </Key>
       <Key ID="STR_TunCon_closestUnitAndMedicWithDistance">
         <Original>%1Closest unit is %2 (%3m)&lt;br/&gt;Closest medic is %4 (%5m)</Original>
