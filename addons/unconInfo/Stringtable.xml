@@ -352,6 +352,126 @@
         <Russian>Time between texts update. (Seconds)</Russian>
         <German>Time between texts update. (Seconds)</German>
       </Key>
+      <Key ID="STR_TunCon_CBA_enableShowEpinephrine">
+        <Original>Enable showing Epinephrine</Original>
+        <English>Enable showing Epinephrine</English>
+        <Czech>Enable showing Epinephrine</Czech>
+        <French>Enable showing Epinephrine</French>
+        <Spanish>Enable showing Epinephrine</Spanish>
+        <Italian>Enable showing Epinephrine</Italian>
+        <Polish>Enable showing Epinephrine</Polish>
+        <Portuguese>Enable showing Epinephrine</Portuguese>
+        <Russian>Enable showing Epinephrine</Russian>
+        <German>Enable showing Epinephrine</German>
+      </Key>
+      <Key ID="STR_TunCon_CBA_enableShowEpinephrineTooltip">
+        <Original>Enable showing text if player has Epinephrine in his system</Original>
+        <English>Enable showing text if player has Epinephrine in his system</English>
+        <Czech>Enable showing text if player has Epinephrine in his system</Czech>
+        <French>Enable showing text if player has Epinephrine in his system</French>
+        <Spanish>Enable showing text if player has Epinephrine in his system</Spanish>
+        <Italian>Enable showing text if player has Epinephrine in his system</Italian>
+        <Polish>Enable showing text if player has Epinephrine in his system</Polish>
+        <Portuguese>Enable showing text if player has Epinephrine in his system</Portuguese>
+        <Russian>Enable showing text if player has Epinephrine in his system</Russian>
+        <German>Enable showing text if player has Epinephrine in his system</German>
+      </Key>
+      <Key ID="STR_TunCon_CBA_enableShowBleeding">
+        <Original>Enable showing bleeding</Original>
+        <English>Enable showing bleeding</English>
+        <Czech>Enable showing bleeding</Czech>
+        <French>Enable showing bleeding</French>
+        <Spanish>Enable showing bleeding</Spanish>
+        <Italian>Enable showing bleeding</Italian>
+        <Polish>Enable showing bleeding</Polish>
+        <Portuguese>Enable showing bleeding</Portuguese>
+        <Russian>Enable showing bleeding</Russian>
+        <German>Enable showing bleeding</German>
+      </Key>
+      <Key ID="STR_TunCon_CBA_enableShowBleedingTooltip">
+        <Original>Enable showing text that player is bleeding</Original>
+        <English>Enable showing text that player is bleeding</English>
+        <Czech>Enable showing text that player is bleeding</Czech>
+        <French>Enable showing text that player is bleeding</French>
+        <Spanish>Enable showing text that player is bleeding</Spanish>
+        <Italian>Enable showing text that player is bleeding</Italian>
+        <Polish>Enable showing text that player is bleeding</Polish>
+        <Portuguese>Enable showing text that player is bleeding</Portuguese>
+        <Russian>Enable showing text that player is bleeding</Russian>
+        <German>Enable showing text that player is bleeding</German>
+      </Key>
+      <Key ID="STR_TunCon_CBA_enableShowCardiacArrest">
+        <Original>Enable showing Cardiac arrest</Original>
+        <English>Enable showing Cardiac arrest</English>
+        <Czech>Enable showing Cardiac arrest</Czech>
+        <French>Enable showing Cardiac arrest</French>
+        <Spanish>Enable showing Cardiac arrest</Spanish>
+        <Italian>Enable showing Cardiac arrest</Italian>
+        <Polish>Enable showing Cardiac arrest</Polish>
+        <Portuguese>Enable showing Cardiac arrest</Portuguese>
+        <Russian>Enable showing Cardiac arrest</Russian>
+        <German>Enable showing Cardiac arrest</German>
+      </Key>
+      <Key ID="STR_TunCon_CBA_enableShowCardiacArrestTooltip">
+        <Original>Enable showing if player is in cardiac arrest</Original>
+        <English>Enable showing if player is in cardiac arrest</English>
+        <Czech>Enable showing if player is in cardiac arrest</Czech>
+        <French>Enable showing if player is in cardiac arrest</French>
+        <Spanish>Enable showing if player is in cardiac arrest</Spanish>
+        <Italian>Enable showing if player is in cardiac arrest</Italian>
+        <Polish>Enable showing if player is in cardiac arrest</Polish>
+        <Portuguese>Enable showing if player is in cardiac arrest</Portuguese>
+        <Russian>Enable showing if player is in cardiac arrest</Russian>
+        <German>Enable showing if player is in cardiac arrest</German>
+      </Key>
+      <Key ID="STR_TunCon_CBA_enableShowHeartRate">
+        <Original>Enable showing heart rate</Original>
+        <English>Enable showing heart rate</English>
+        <Czech>Enable showing heart rate</Czech>
+        <French>Enable showing heart rate</French>
+        <Spanish>Enable showing heart rate</Spanish>
+        <Italian>Enable showing heart rate</Italian>
+        <Polish>Enable showing heart rate</Polish>
+        <Portuguese>Enable showing heart rate</Portuguese>
+        <Russian>Enable showing heart rate</Russian>
+        <German>Enable showing heart rate</German>
+      </Key>
+      <Key ID="STR_TunCon_CBA_enableShowHeartRateTooltip">
+        <Original>Enable showing heart rate for player</Original>
+        <English>Enable showing heart rate for player</English>
+        <Czech>Enable showing heart rate for player</Czech>
+        <French>Enable showing heart rate for player</French>
+        <Spanish>Enable showing heart rate for player</Spanish>
+        <Italian>Enable showing heart rate for player</Italian>
+        <Polish>Enable showing heart rate for player</Polish>
+        <Portuguese>Enable showing heart rate for player</Portuguese>
+        <Russian>Enable showing heart rate for player</Russian>
+        <German>Enable showing heart rate for player</German>
+      </Key>
+      <Key ID="STR_TunCon_CBA_enableShowStableVitals">
+        <Original>Enable showing stable vitals</Original>
+        <English>Enable showing stable vitals</English>
+        <Czech>Enable showing stable vitals</Czech>
+        <French>Enable showing stable vitals</French>
+        <Spanish>Enable showing stable vitals</Spanish>
+        <Italian>Enable showing stable vitals</Italian>
+        <Polish>Enable showing stable vitals</Polish>
+        <Portuguese>Enable showing stable vitals</Portuguese>
+        <Russian>Enable showing stable vitals</Russian>
+        <German>Enable showing stable vitals</German>
+      </Key>
+      <Key ID="STR_TunCon_CBA_enableShowStableVitalsTooltip">
+        <Original>Enable showing if player has stable or unstable vitals</Original>
+        <English>Enable showing if player has stable or unstable vitals</English>
+        <Czech>Enable showing if player has stable or unstable vitals</Czech>
+        <French>Enable showing if player has stable or unstable vitals</French>
+        <Spanish>Enable showing if player has stable or unstable vitals</Spanish>
+        <Italian>Enable showing if player has stable or unstable vitals</Italian>
+        <Polish>Enable showing if player has stable or unstable vitals</Polish>
+        <Portuguese>Enable showing if player has stable or unstable vitals</Portuguese>
+        <Russian>Enable showing if player has stable or unstable vitals</Russian>
+        <German>Enable showing if player has stable or unstable vitals</German>
+      </Key>
     </Container>
   </Package>
 </Project>
