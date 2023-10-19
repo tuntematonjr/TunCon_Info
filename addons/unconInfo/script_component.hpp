@@ -1,20 +1,15 @@
 #define COMPONENT unconInfo
-#define PREFIX Tun
+#define COMPONENT_BEAUTIFIED UnconInfo
+#include "\x\tuncon\addons\main\script_mod.hpp"
 
-#define MAJOR 1
-#define MINOR 1
-#define PATCHLVL 2
-#define BUILD 24092023
+// #define DEBUG_MODE_FULL
+#define DISABLE_COMPILE_CACHE
 
-#define VERSION MAJOR.MINOR.PATCHLVL.BUILD
-#define VERSION_AR MAJOR,MINOR,PATCHLVL,BUILD
+#ifdef DEBUG_ENABLED_EXAMPLE_ADDON
+    #define DEBUG_MODE_FULL
+#endif
+    #ifdef DEBUG_SETTINGS_EXAMPLE_ADDON
+    #define DEBUG_SETTINGS DEBUG_SETTINGS_EXAMPLE_ADDON
+#endif
 
-// MINIMAL required version for the Mod. Components can specify others..
-#define REQUIRED_VERSION 2.12
-
-#define DEBUG_MODE_FULL
-
-#include "\z\ace\addons\main\script_macros.hpp"
-
-// Default versioning level
-#define DEFAULT_VERSIONING_LEVEL 2
+#include "\x\tuncon\addons\main\script_macros.hpp"

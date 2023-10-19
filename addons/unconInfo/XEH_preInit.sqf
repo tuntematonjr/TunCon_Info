@@ -1,5 +1,11 @@
 #include "script_component.hpp"
-#include "XEH_prep.sqf"
+ADDON = false;
+
+PREP_RECOMPILE_START;
+#include "XEH_PREP.hpp"
+PREP_RECOMPILE_END;
+
+ADDON = true;
 
 private _category = ["Tun Utilities - Uncon Info", "Uncon Info"];
 
@@ -7,6 +13,61 @@ private _category = ["Tun Utilities - Uncon Info", "Uncon Info"];
     QGVAR(enableUnconInfo),
     "CHECKBOX",
     [localize "STR_TunCon_CBA_enableUnconInfo", localize "STR_TunCon_CBA_enableUnconInfoTooltip"],
+    _category,
+    true,
+    1,
+    {},
+    true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(enableShowEpinephrine),
+    "CHECKBOX",
+    [localize "STR_TunCon_CBA_enableShowEpinephrine", localize "STR_TunCon_CBA_enableShowEpinephrineTooltip"],
+    _category,
+    true,
+    1,
+    {},
+    true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(enableShowBleeding),
+    "CHECKBOX",
+    [localize "STR_TunCon_CBA_enableShowBleeding", localize "STR_TunCon_CBA_enableShowBleedingTooltip"],
+    _category,
+    true,
+    1,
+    {},
+    true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(enableShowCardiacArrest),
+    "CHECKBOX",
+    [localize "STR_TunCon_CBA_enableShowCardiacArrest", localize "STR_TunCon_CBA_enableShowCardiacArrestTooltip"],
+    _category,
+    true,
+    1,
+    {},
+    true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(enableShowHeartRate),
+    "CHECKBOX",
+    [localize "STR_TunCon_CBA_enableShowHeartRate", localize "STR_TunCon_CBA_enableShowHeartRateTooltip"],
+    _category,
+    true,
+    1,
+    {},
+    true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(enableShowStableVitals),
+    "CHECKBOX",
+    [localize "STR_TunCon_CBA_enableShowStableVitals", localize "STR_TunCon_CBA_enableShowStableVitalsTooltip"],
     _category,
     true,
     1,
@@ -78,7 +139,7 @@ private _category = ["Tun Utilities - Uncon Info", "Uncon Info"];
     "SLIDER", 
     [localize "STR_TunCon_CBA_updateInterval", localize "STR_TunCon_CBA_updateIntervalTooltip"], 
     _category,
-    [5, 60, 5, 0],
+    [1, 60, 5, 0],
     1,
     { 
         params ["_value"];

@@ -1,4 +1,4 @@
-﻿/*
+/*
  * Author: [Tuntematon]
  * [Description]
  * 
@@ -18,25 +18,32 @@ private _text = localize "STR_TunCon_firstLine" + "<br/>";
 private _bleeding = player getvariable ["ace_medical_woundBleeding", 0];
 private _hasStableVitals = [player] call ace_medical_status_fnc_hasStableVitals;
 
-if (_bleeding > 0) then {
+if (GVAR(enableShowBleeding) && _bleeding > 0) then {
 	_text = _text + localize "STR_TunCon_isBleeding" + "<br/>";
 };
 
+//Heart rate/
 if (player getvariable ["ace_medical_inCardiacArrest", false]) then {
-	_text = _text + localize "STR_TunCon_inCardiacArrest" + "<br/>";
+	if (GVAR(enableShowCardiacArrest)) then {
+		_text = _text + localize "STR_TunCon_inCardiacArrest" + "<br/>";
+	};
 } else {
-	if (player getvariable ["ace_medical_heartRate", 0] > 0) then {
+	if (GVAR(enableShowHeartRate) && {player getvariable ["ace_medical_heartRate", 0] > 0}) then {
 		_text = _text + localize "STR_TunCon_hasPulse" + "<br/>";
 	};
 
 	if (_hasStableVitals) then {
-		_text = _text + localize "STR_TunCon_hasStableVitals" + "<br/>";
+		if (GVAR(enableShowStableVitals)) then {
+			_text = _text + localize "STR_TunCon_hasStableVitals" + "<br/>";
+		};
 
-		if ([player, "Epinephrine"] call ace_medical_status_fnc_getMedicationCount > 0) then {
+		if (GVAR(enableShowEpinephrine) && {[player, "Epinephrine"] call ace_medical_status_fnc_getMedicationCount > 0}) then {
 			_text = _text + localize "STR_TunCon_hasepinEphrine" + "<br/>";
 		};
 	} else {
-		_text = _text + localize "STR_TunCon_notStableVitals" + "<br/>";
+		if (GVAR(enableShowStableVitals)) then {
+			_text = _text + localize "STR_TunCon_notStableVitals" + "<br/>";
+		};
 	};
 };
 
@@ -86,12 +93,6 @@ if (GVAR(allowNearestUnit)) then {
 				_text = format [localize "STR_TunCon_closestUnitNoMedicWithOutDistance",_text, name _closestUnit];
 			};
 		};
-
-		if (GVAR(isBeingHelped)) then {
-			GVAR(isBeingHelped) = false;
-			_text = _text + "<br/>" + localize "STR_TunCon_isBeingHelpedText";
-		};
-
 	} else {
 		_text = _text + localize "STR_TunCon_noFriends";
 
@@ -99,6 +100,15 @@ if (GVAR(allowNearestUnit)) then {
 			_text = _text + "<br/>" + GVAR(noFriendliesNearbyText);
 		};
 	};
+};
+
+if (GVAR(isBeingHelpedTime) > cba_missionTime) then {
+	_text = _text + "<br/>" + localize "STR_TunCon_isBeingHelpedText";
+};
+
+
+if (_text isEqualTo localize "STR_TunCon_firstLine" + "<br/>") then {
+	_text = "";
 };
 
 cutText ["<t size='2'>"+_text+"</t>", "PLAIN NOFADE" , -1, false, true];
