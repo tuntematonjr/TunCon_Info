@@ -1,0 +1,33 @@
+name = "TunCon"
+prefix = "TunCon"
+author = "Tuntematon"
+mainprefix = "x"
+
+[files]
+include = [
+    "mod.cpp",
+    "data/**",
+]
+
+[version]
+git_hash = 0 
+
+[binarize]
+enabled = false 
+
+[lint.sqf]
+enabled = false
+
+[hemtt.launch.default]
+workshop = [
+    "450814997",
+    "463939057",
+]
+parameters = [
+    "-skipIntro",           # These parameters are passed to the Arma 3 executable
+    "-noSplash",            # They do not need to be added to your list
+    "-showScriptErrors",    # You can add additional parameters here
+    "-debug",
+    "-filePatching",
+    "C:\\Users\\mikal\\Documents\\Arma 3 - Other Profiles\\Tuntematon\\missions\\startmarkers.Enoch\\mission.sqm", # Launch into existing Editor Mission - \\ needed
+]
