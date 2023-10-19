@@ -1,357 +1,233 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="unconinfo">
-  <Package name="unconinfo">
-    <Container name="unconinfo">
-      <Key ID="STR_TunCon_firstLine">
-        <Original>You sense that</Original>
-        <English>You sense that</English>
-        <Czech>You sense that</Czech>
-        <French>You sense that</French>
-        <Spanish>Sientes que</Spanish>
-        <Italian>You sense that</Italian>
-        <Polish>You sense that</Polish>
-        <Portuguese>You sense that</Portuguese>
-        <Russian>You sense that</Russian>
-        <German>You sense that</German>
-      </Key>
-      <Key ID="STR_TunCon_isBleeding">
-        <Original>You are bleeding</Original>
-        <English>You are bleeding</English>
-        <Czech>You are bleeding</Czech>
-        <French>You are bleeding</French>
-        <Spanish>Estas sangrando</Spanish>
-        <Italian>You are bleeding</Italian>
-        <Polish>You are bleeding</Polish>
-        <Portuguese>You are bleeding</Portuguese>
-        <Russian>You are bleeding</Russian>
-        <German>You are bleeding</German>
-      </Key>
-      <Key ID="STR_TunCon_hasPulse">
-        <Original>You still have pulse</Original>
-        <English>You still have pulse</English>
-        <Czech>You still have pulse</Czech>
-        <French>You still have pulse</French>
-        <Spanish>Todavia tienes pulsa</Spanish>
-        <Italian>You still have pulse</Italian>
-        <Polish>You still have pulse</Polish>
-        <Portuguese>You still have pulse</Portuguese>
-        <Russian>You still have pulse</Russian>
-        <German>You still have pulse</German>
-      </Key>
-      <Key ID="STR_TunCon_inCardiacArrest">
-        <Original>You are in cardiac arrest</Original>
-        <English>You are in cardiac arrest</English>
-        <Czech>You are in cardiac arrest</Czech>
-        <French>You are in cardiac arrest</French>
-        <Spanish>Estas en parada cardiaca</Spanish>
-        <Italian>You are in cardiac arrest</Italian>
-        <Polish>You are in cardiac arrest</Polish>
-        <Portuguese>You are in cardiac arrest</Portuguese>
-        <Russian>You are in cardiac arrest</Russian>
-        <German>You are in cardiac arrest</German>
-      </Key>
-      <Key ID="STR_TunCon_hasStableVitals">
-        <Original>You have stable vitals (you can wake up)</Original>
-        <English>You have stable vitals (you can wake up)</English>
-        <Czech>You have stable vitals (you can wake up)</Czech>
-        <French>You have stable vitals (you can wake up)</French>
-        <Spanish>Tienes las vitales estables (Puedes despertar)</Spanish>
-        <Italian>You have stable vitals (you can wake up)</Italian>
-        <Polish>You have stable vitals (you can wake up)</Polish>
-        <Portuguese>You have stable vitals (you can wake up)</Portuguese>
-        <Russian>You have stable vitals (you can wake up)</Russian>
-        <German>You have stable vitals (you can wake up)</German>
-      </Key>
-      <Key ID="STR_TunCon_notStableVitals">
-        <Original>You don't have stable vitals (This prevents you from waking up)</Original>
-        <English>You don't have stable vitals (This prevents you from waking up)</English>
-        <Czech>You don't have stable vitals (This prevents you from waking up)</Czech>
-        <French>You don't have stable vitals (This prevents you from waking up)</French>
-        <Spanish>No tienes las vitales estables (No puedes despertar)</Spanish>
-        <Italian>You don't have stable vitals (This prevents you from waking up)</Italian>
-        <Polish>You don't have stable vitals (This prevents you from waking up)</Polish>
-        <Portuguese>You don't have stable vitals (This prevents you from waking up)</Portuguese>
-        <Russian>You don't have stable vitals (This prevents you from waking up)</Russian>
-        <German>You don't have stable vitals (This prevents you from waking up)</German>
-      </Key>
-      <Key ID="STR_TunCon_hasepinEphrine">
-        <Original>You have epinephrine in your system (Significantly higher chance of waking up)</Original>
-        <English>You have epinephrine in your system (Significantly higher chance of waking up)</English>
-        <Czech>You have epinephrine in your system (Significantly higher chance of waking up)</Czech>
-        <French>You have epinephrine in your system (Significantly higher chance of waking up)</French>
-        <Spanish>Tienes epinefrina en tu sistema (tus probabilidades de despertar aumentan)</Spanish>
-        <Italian>You have epinephrine in your system (Significantly higher chance of waking up)</Italian>
-        <Polish>You have epinephrine in your system (Significantly higher chance of waking up)</Polish>
-        <Portuguese>You have epinephrine in your system (Significantly higher chance of waking up)</Portuguese>
-        <Russian>You have epinephrine in your system (Significantly higher chance of waking up)</Russian>
-        <German>You have epinephrine in your system (Significantly higher chance of waking up)</German>
-      </Key>
-      <Key ID="STR_TunCon_noFriends">
-        <Original>There are no friendlies nearby</Original>
-        <English>There are no friendlies nearby</English>
-        <Czech>There are no friendlies nearby</Czech>
-        <French>There are no friendlies nearby</French>
-        <Spanish>No hay aliados cerca</Spanish>
-        <Italian>There are no friendlies nearby</Italian>
-        <Polish>There are no friendlies nearby</Polish>
-        <Portuguese>There are no friendlies nearby</Portuguese>
-        <Russian>There are no friendlies nearby</Russian>
-        <German>There are no friendlies nearby</German>
-      </Key>
-      <Key ID="STR_TunCon_closestUnitWithDistance">
-        <Original>%1Closest unit is %2 and %2 medic (%3m)</Original>
-        <English>%1Closest unit is %2 and %2 medic (%3m)</English>
-        <Czech>%1Closest unit is %2 and %2 medic (%3m)</Czech>
-        <French>%1Closest unit is %2 and %2 medic (%3m)</French>
-        <Spanish>%1El aliado mas cercano es %2 y es medico (%3m)</Spanish>
-        <Italian>%1Closest unit is %2 and %2 medic (%3m)</Italian>
-        <Polish>%1Closest unit is %2 and %2 medic (%3m)</Polish>
-        <Portuguese>%1Closest unit is %2 and %2 medic (%3m)</Portuguese>
-        <Russian>%1Closest unit is %2 and %2 medic (%3m)</Russian>
-        <German>%1Closest unit is %2 and %2 medic (%3m)</German>
-      </Key>
-      <Key ID="STR_TunCon_closestUnitWithOutDistance">
-        <Original>%1Closest unit is %2 and %2 medic</Original>
-        <English>%1Closest unit is %2 and %2 medic</English>
-        <Czech>%1Closest unit is %2 and %2 medic</Czech>
-        <French>%1Closest unit is %2 and %2 medic</French>
-        <Spanish>%1El aliado mas cercano es %2 y tambien es medico</Spanish>
-        <Italian>%1Closest unit is %2 and %2 medic</Italian>
-        <Polish>%1Closest unit is %2 and %2 medic</Polish>
-        <Portuguese>%1Closest unit is %2 and %2 medic</Portuguese>
-        <Russian>%1Closest unit is %2 and %2 medic</Russian>
-        <German>%1Closest unit is %2 and %2 medic</German>
-      </Key>
-      <Key ID="STR_TunCon_closestUnitAndMedicWithDistance">
-        <Original>%1Closest unit is %2 (%3m)&lt;br/&gt;Closest medic is %4 (%5m)</Original>
-        <English>%1Closest unit is %2 (%3m)&lt;br/&gt;Closest medic is %4 (%5m)</English>
-        <Czech>%1Closest unit is %2 (%3m)&lt;br/&gt;Closest medic is %4 (%5m)</Czech>
-        <French>%1Closest unit is %2 (%3m)&lt;br/&gt;Closest medic is %4 (%5m)</French>
-        <Spanish>%1El aliado mas cercano es %2 (%3m)&lt;br/&gt;El medico mas cercano es %4 (%5m)</Spanish>
-        <Italian>%1Closest unit is %2 (%3m)&lt;br/&gt;Closest medic is %4 (%5m)</Italian>
-        <Polish>%1Closest unit is %2 (%3m)&lt;br/&gt;Closest medic is %4 (%5m)</Polish>
-        <Portuguese>%1Closest unit is %2 (%3m)&lt;br/&gt;Closest medic is %4 (%5m)</Portuguese>
-        <Russian>%1Closest unit is %2 (%3m)&lt;br/&gt;Closest medic is %4 (%5m)</Russian>
-        <German>%1Closest unit is %2 (%3m)&lt;br/&gt;Closest medic is %4 (%5m)</German>
-      </Key>
-      <Key ID="STR_TunCon_closestUnitAndMedicWithOutDistance">
-        <Original>%1Closest unit is %2&lt;br/&gt;Closest medic is %3</Original>
-        <English>%1Closest unit is %2&lt;br/&gt;Closest medic is %3</English>
-        <Czech>%1Closest unit is %2&lt;br/&gt;Closest medic is %3</Czech>
-        <French>%1Closest unit is %2&lt;br/&gt;Closest medic is %3</French>
-        <Spanish>%1El aliado mas cercano es %2&lt;br/&gt;El medico mas cercano es %3</Spanish>
-        <Italian>%1Closest unit is %2&lt;br/&gt;Closest medic is %3</Italian>
-        <Polish>%1Closest unit is %2&lt;br/&gt;Closest medic is %3</Polish>
-        <Portuguese>%1Closest unit is %2&lt;br/&gt;Closest medic is %3</Portuguese>
-        <Russian>%1Closest unit is %2&lt;br/&gt;Closest medic is %3</Russian>
-        <German>%1Closest unit is %2&lt;br/&gt;Closest medic is %3</German>
-      </Key>
-      <Key ID="STR_TunCon_closestUnitNoMedicWithDistance">
-        <Original>%1Closest unit is %2 (%3m), but no medics nearby</Original>
-        <English>%1Closest unit is %2 (%3m), but no medics nearby</English>
-        <Czech>%1Closest unit is %2 (%3m), but no medics nearby</Czech>
-        <French>%1Closest unit is %2 (%3m), but no medics nearby</French>
-        <Spanish>%1El aliado mas cercano es %2 (%3m), pero no hay ningun medico cerca</Spanish>
-        <Italian>%1Closest unit is %2 (%3m), but no medics nearby</Italian>
-        <Polish>%1Closest unit is %2 (%3m), but no medics nearby</Polish>
-        <Portuguese>%1Closest unit is %2 (%3m), but no medics nearby</Portuguese>
-        <Russian>%1Closest unit is %2 (%3m), but no medics nearby</Russian>
-        <German>%1Closest unit is %2 (%3m), but no medics nearby</German>
-      </Key>
-      <Key ID="STR_TunCon_closestUnitNoMedicWithOutDistance">
-        <Original>%1Closest unit is %2, but no medics nearby</Original>
-        <English>%1Closest unit is %2, but no medics nearby</English>
-        <Czech>%1Closest unit is %2, but no medics nearby</Czech>
-        <French>%1Closest unit is %2, but no medics nearby</French>
-        <Spanish>%1El aliado mas cercano es %2, pero no hay ningun medico cerca</Spanish>
-        <Italian>%1Closest unit is %2, but no medics nearby</Italian>
-        <Polish>%1Closest unit is %2, but no medics nearby</Polish>
-        <Portuguese>%1Closest unit is %2, but no medics nearby</Portuguese>
-        <Russian>%1Closest unit is %2, but no medics nearby</Russian>
-        <German>%1Closest unit is %2, but no medics nearby</German>
-      </Key>
-      <Key ID="STR_TunCon_isBeingHelpedText">
-        <Original>You are being helped!</Original>
-        <English>You are being helped!</English>
-        <Czech>You are being helped!</Czech>
-        <French>You are being helped!</French>
-        <Spanish>¡Te estan ayudando!</Spanish>
-        <Italian>You are being helped!</Italian>
-        <Polish>You are being helped!</Polish>
-        <Portuguese>You are being helped!</Portuguese>
-        <Russian>You are being helped!</Russian>
-        <German>You are being helped!</German>
-      </Key>
-    </Container>
-    <Container name="cba">
-      <Key ID="STR_TunCon_CBA_enableUnconInfo">
-        <Original>Enable uncon info</Original>
-        <English>Enable uncon info</English>
-        <Czech>Enable uncon info</Czech>
-        <French>Enable uncon info</French>
-        <Spanish>Activar uncon info</Spanish>
-        <Italian>Enable uncon info</Italian>
-        <Polish>Enable uncon info</Polish>
-        <Portuguese>Enable uncon info</Portuguese>
-        <Russian>Enable uncon info</Russian>
-        <German>Enable uncon info</German>
-      </Key>
-      <Key ID="STR_TunCon_CBA_enableUnconInfoTooltip">
-        <Original>Enanbles uncon to know whats going around them. Own vitals and if friendlies nearby.</Original>
-        <English>Enanbles uncon to know whats going around them. Own vitals and if friendlies nearby.</English>
-        <Czech>Enanbles uncon to know whats going around them. Own vitals and if friendlies nearby.</Czech>
-        <French>Enanbles uncon to know whats going around them. Own vitals and if friendlies nearby.</French>
-        <Spanish>Permite que uncon sepa que pasa alrededor. Tus propias vitales y si hay aliados cerca</Spanish>
-        <Italian>Enanbles uncon to know whats going around them. Own vitals and if friendlies nearby.</Italian>
-        <Polish>Enanbles uncon to know whats going around them. Own vitals and if friendlies nearby.</Polish>
-        <Portuguese>Enanbles uncon to know whats going around them. Own vitals and if friendlies nearby.</Portuguese>
-        <Russian>Enanbles uncon to know whats going around them. Own vitals and if friendlies nearby.</Russian>
-        <German>Enanbles uncon to know whats going around them. Own vitals and if friendlies nearby.</German>
-      </Key>
-      <Key ID="STR_TunCon_CBA_enableShowingNearestUnit">
-        <Original>Enable showing nearest unit</Original>
-        <English>Enable showing nearest unit</English>
-        <Czech>Enable showing nearest unit</Czech>
-        <French>Enable showing nearest unit</French>
-        <Spanish>Activar mostrar el aliado mas cercano</Spanish>
-        <Italian>Enable showing nearest unit</Italian>
-        <Polish>Enable showing nearest unit</Polish>
-        <Portuguese>Enable showing nearest unit</Portuguese>
-        <Russian>Enable showing nearest unit</Russian>
-        <German>Enable showing nearest unit</German>
-      </Key>
-      <Key ID="STR_TunCon_CBA_enableShowingNearestUnitTooltip">
-        <Original>Enables showing if there is nearby friendly units</Original>
-        <English>Enables showing if there is nearby friendly units</English>
-        <Czech>Enables showing if there is nearby friendly units</Czech>
-        <French>Enables showing if there is nearby friendly units</French>
-        <Spanish>Enables showing if there is nearby friendly units</Spanish>
-        <Italian>Enables showing if there is nearby friendly units</Italian>
-        <Polish>Enables showing if there is nearby friendly units</Polish>
-        <Portuguese>Enables showing if there is nearby friendly units</Portuguese>
-        <Russian>Enables showing if there is nearby friendly units</Russian>
-        <German>Enables showing if there is nearby friendly units</German>
-      </Key>
-      <Key ID="STR_TunCon_CBA_enableShowingDistance">
-        <Original>Enable showing nearest unit distance</Original>
-        <English>Enable showing nearest unit distance</English>
-        <Czech>Enable showing nearest unit distance</Czech>
-        <French>Enable showing nearest unit distance</French>
-        <Spanish>Enable showing nearest unit distance</Spanish>
-        <Italian>Enable showing nearest unit distance</Italian>
-        <Polish>Enable showing nearest unit distance</Polish>
-        <Portuguese>Enable showing nearest unit distance</Portuguese>
-        <Russian>Enable showing nearest unit distance</Russian>
-        <German>Enable showing nearest unit distance</German>
-      </Key>
-      <Key ID="STR_TunCon_CBA_enableShowingDistanceTooltip">
-        <Original>Enable showing closest friendlies distance</Original>
-        <English>Enable showing closest friendlies distance</English>
-        <Czech>Enable showing closest friendlies distance</Czech>
-        <French>Enable showing closest friendlies distance</French>
-        <Spanish>Enable showing closest friendlies distance</Spanish>
-        <Italian>Enable showing closest friendlies distance</Italian>
-        <Polish>Enable showing closest friendlies distance</Polish>
-        <Portuguese>Enable showing closest friendlies distance</Portuguese>
-        <Russian>Enable showing closest friendlies distance</Russian>
-        <German>Enable showing closest friendlies distance</German>
-      </Key>
-      <Key ID="STR_TunCon_CBA_distanceToLookFriendlies">
-        <Original>Distance for looking closest friendly</Original>
-        <English>Distance for looking closest friendly</English>
-        <Czech>Distance for looking closest friendly</Czech>
-        <French>Distance for looking closest friendly</French>
-        <Spanish>Distance for looking closest friendly</Spanish>
-        <Italian>Distance for looking closest friendly</Italian>
-        <Polish>Distance for looking closest friendly</Polish>
-        <Portuguese>Distance for looking closest friendly</Portuguese>
-        <Russian>Distance for looking closest friendly</Russian>
-        <German>Distance for looking closest friendly</German>
-      </Key>
-      <Key ID="STR_TunCon_CBA_distanceToLookFriendliesTooltip">
-        <Original>Distance in meters to find nearest friendly and medic</Original>
-        <English>Distance in meters to find nearest friendly and medic</English>
-        <Czech>Distance in meters to find nearest friendly and medic</Czech>
-        <French>Distance in meters to find nearest friendly and medic</French>
-        <Spanish>Distance in meters to find nearest friendly and medic</Spanish>
-        <Italian>Distance in meters to find nearest friendly and medic</Italian>
-        <Polish>Distance in meters to find nearest friendly and medic</Polish>
-        <Portuguese>Distance in meters to find nearest friendly and medic</Portuguese>
-        <Russian>Distance in meters to find nearest friendly and medic</Russian>
-        <German>Distance in meters to find nearest friendly and medic</German>
-      </Key>
-      <Key ID="STR_TunCon_CBA_noFriends">
-        <Original>Text if no friendlies nearby and no vitals</Original>
-        <English>Text if no friendlies nearby and no vitals</English>
-        <Czech>Text if no friendlies nearby and no vitals</Czech>
-        <French>Text if no friendlies nearby and no vitals</French>
-        <Spanish>Text if no friendlies nearby and no vitals</Spanish>
-        <Italian>Text if no friendlies nearby and no vitals</Italian>
-        <Polish>Text if no friendlies nearby and no vitals</Polish>
-        <Portuguese>Text if no friendlies nearby and no vitals</Portuguese>
-        <Russian>Text if no friendlies nearby and no vitals</Russian>
-        <German>Text if no friendlies nearby and no vitals</German>
-      </Key>
-      <Key ID="STR_TunCon_CBA_noFriendsTooltip">
-        <Original>Text what is shown when player has bad vitals and no friendlies nearby</Original>
-        <English>Text what is shown when player has bad vitals and no friendlies nearby</English>
-        <Czech>Text what is shown when player has bad vitals and no friendlies nearby</Czech>
-        <French>Text what is shown when player has bad vitals and no friendlies nearby</French>
-        <Spanish>Text what is shown when player has bad vitals and no friendlies nearby</Spanish>
-        <Italian>Text what is shown when player has bad vitals and no friendlies nearby</Italian>
-        <Polish>Text what is shown when player has bad vitals and no friendlies nearby</Polish>
-        <Portuguese>Text what is shown when player has bad vitals and no friendlies nearby</Portuguese>
-        <Russian>Text what is shown when player has bad vitals and no friendlies nearby</Russian>
-        <German>Text what is shown when player has bad vitals and no friendlies nearby</German>
-      </Key>
-      <Key ID="STR_TunCon_CBA_enableShowIfTreated">
-        <Original>Enable showing if player is treated</Original>
-        <English>Enable showing if player is treated</English>
-        <Czech>Enable showing if player is treated</Czech>
-        <French>Enable showing if player is treated</French>
-        <Spanish>Enable showing if player is treated</Spanish>
-        <Italian>Enable showing if player is treated</Italian>
-        <Polish>Enable showing if player is treated</Polish>
-        <Portuguese>Enable showing if player is treated</Portuguese>
-        <Russian>Enable showing if player is treated</Russian>
-        <German>Enable showing if player is treated</German>
-      </Key>
-      <Key ID="STR_TunCon_CBA_enableShowIfTreatedTooltip">
-        <Original>Enables showing text that player is being treated</Original>
-        <English>Enables showing text that player is being treated</English>
-        <Czech>Enables showing text that player is being treated</Czech>
-        <French>Enables showing text that player is being treated</French>
-        <Spanish>Enables showing text that player is being treated</Spanish>
-        <Italian>Enables showing text that player is being treated</Italian>
-        <Polish>Enables showing text that player is being treated</Polish>
-        <Portuguese>Enables showing text that player is being treated</Portuguese>
-        <Russian>Enables showing text that player is being treated</Russian>
-        <German>Enables showing text that player is being treated</German>
-      </Key>
-      <Key ID="STR_TunCon_CBA_updateInterval">
-        <Original>Update interval</Original>
-        <English>Update interval</English>
-        <Czech>Update interval</Czech>
-        <French>Update interval</French>
-        <Spanish>Update interval</Spanish>
-        <Italian>Update interval</Italian>
-        <Polish>Update interval</Polish>
-        <Portuguese>Update interval</Portuguese>
-        <Russian>Update interval</Russian>
-        <German>Update interval</German>
-      </Key>
-      <Key ID="STR_TunCon_CBA_updateIntervalTooltip">
-        <Original>Time between texts update. (Seconds)</Original>
-        <English>Time between texts update. (Seconds)</English>
-        <Czech>Time between texts update. (Seconds)</Czech>
-        <French>Time between texts update. (Seconds)</French>
-        <Spanish>Time between texts update. (Seconds)</Spanish>
-        <Italian>Time between texts update. (Seconds)</Italian>
-        <Polish>Time between texts update. (Seconds)</Polish>
-        <Portuguese>Time between texts update. (Seconds)</Portuguese>
-        <Russian>Time between texts update. (Seconds)</Russian>
-        <German>Time between texts update. (Seconds)</German>
-      </Key>
-    </Container>
-  </Package>
+    <Package name="unconinfo">
+        <Container name="unconinfo">
+            <Key ID="STR_TunCon_firstLine">
+                <Original>You sense that</Original>
+                <English>You sense that</English>
+                <Spanish>Sientes que</Spanish>
+                <Japanese>あなたが感じていることは次の通り</Japanese>
+            </Key>
+            <Key ID="STR_TunCon_isBleeding">
+                <Original>You are bleeding</Original>
+                <English>You are bleeding</English>
+                <Spanish>Estas sangrando</Spanish>
+                <Japanese>あなたは出血している</Japanese>
+            </Key>
+            <Key ID="STR_TunCon_hasPulse">
+                <Original>You still have pulse</Original>
+                <English>You still have pulse</English>
+                <Spanish>Todavia tienes pulsa</Spanish>
+                <Japanese>あなたはまだ脈拍がある</Japanese>
+            </Key>
+            <Key ID="STR_TunCon_inCardiacArrest">
+                <Original>You are in cardiac arrest</Original>
+                <English>You are in cardiac arrest</English>
+                <Spanish>Estas en parada cardiaca</Spanish>
+                <Japanese>あなたは心停止している</Japanese>
+            </Key>
+            <Key ID="STR_TunCon_hasStableVitals">
+                <Original>You have stable vitals (you can wake up)</Original>
+                <English>You have stable vitals (you can wake up)</English>
+                <Spanish>Tienes las vitales estables (Puedes despertar)</Spanish>
+                <Japanese>あなたのバイタルは安定している (目覚める可能性がある)</Japanese>
+            </Key>
+            <Key ID="STR_TunCon_notStableVitals">
+                <Original>You don't have stable vitals (This prevents you from waking up)</Original>
+                <English>You don't have stable vitals (This prevents you from waking up)</English>
+                <Spanish>No tienes las vitales estables (No puedes despertar)</Spanish>
+                <Japanese>あなたのバイタルは安定していない (目覚めることは出来ない)</Japanese>
+            </Key>
+            <Key ID="STR_TunCon_hasepinEphrine">
+                <Original>You have epinephrine in your system (Significantly higher chance of waking up)</Original>
+                <English>You have epinephrine in your system (Significantly higher chance of waking up)</English>
+                <Spanish>Tienes epinefrina en tu sistema (tus probabilidades de despertar aumentan)</Spanish>
+                <Japanese>あなたはアドレナリンを打たれている (目覚める確率が上がっている)</Japanese>
+            </Key>
+            <Key ID="STR_TunCon_noFriends">
+                <Original>There are no friendlies nearby</Original>
+                <English>There are no friendlies nearby</English>
+                <Spanish>No hay aliados cerca</Spanish>
+                <Japanese>友軍は付近に居ないようです</Japanese>
+            </Key>
+            <Key ID="STR_TunCon_closestUnitWithDistance">
+                <Original>%1Closest unit is %2 and %2 is medic (%3m)</Original>
+                <English>%1Closest unit is %2 and %2 is medic (%3m)</English>
+                <Spanish>%1El aliado mas cercano es %2 y es medico (%3m)</Spanish>
+                <Japanese>%1最も近い友軍は %2 で衛生兵です (%3m)</Japanese>
+            </Key>
+            <Key ID="STR_TunCon_closestUnitWithOutDistance">
+                <Original>%1Closest unit is %2 and %2 is medic</Original>
+                <English>%1Closest unit is %2 and %2 is medic</English>
+                <Spanish>%1El aliado mas cercano es %2 y tambien es medico</Spanish>
+                <Japanese>%1最も近い友軍は %2 で衛生兵です</Japanese>
+            </Key>
+            <Key ID="STR_TunCon_closestUnitAndMedicWithDistance">
+                <Original>%1Closest unit is %2 (%3m)&lt;br/&gt;Closest medic is %4 (%5m)</Original>
+                <English>%1Closest unit is %2 (%3m)&lt;br/&gt;Closest medic is %4 (%5m)</English>
+                <Spanish>%1El aliado mas cercano es %2 (%3m)&lt;br/&gt;El medico mas cercano es %4 (%5m)</Spanish>
+                <Japanese>%1最も近い友軍は %2 です (%3m)&lt;br/&gt;最も近い衛生兵は %4 です (%5m)</Japanese>
+            </Key>
+            <Key ID="STR_TunCon_closestUnitAndMedicWithOutDistance">
+                <Original>%1Closest unit is %2&lt;br/&gt;Closest medic is %3</Original>
+                <English>%1Closest unit is %2&lt;br/&gt;Closest medic is %3</English>
+                <Spanish>%1El aliado mas cercano es %2&lt;br/&gt;El medico mas cercano es %3</Spanish>
+                <Japanese>%1最も近い友軍は %2 です&lt;br/&gt;最も近い衛生兵は %3 です</Japanese>
+            </Key>
+            <Key ID="STR_TunCon_closestUnitNoMedicWithDistance">
+                <Original>%1Closest unit is %2 (%3m), but no medics nearby</Original>
+                <English>%1Closest unit is %2 (%3m), but no medics nearby</English>
+                <Spanish>%1El aliado mas cercano es %2 (%3m), pero no hay ningun medico cerca</Spanish>
+                <Japanese>%1最も近い友軍は %2 です (%3m), しかし付近に衛生兵はいません</Japanese>
+            </Key>
+            <Key ID="STR_TunCon_closestUnitNoMedicWithOutDistance">
+                <Original>%1Closest unit is %2, but no medics nearby</Original>
+                <English>%1Closest unit is %2, but no medics nearby</English>
+                <Spanish>%1El aliado mas cercano es %2, pero no hay ningun medico cerca</Spanish>
+                <Japanese>%1最も近い友軍は %2 です, しかし付近に衛生兵はいません</Japanese>
+            </Key>
+            <Key ID="STR_TunCon_isBeingHelpedText">
+                <Original>You are being helped!</Original>
+                <English>You are being helped!</English>
+                <Spanish>¡Te estan ayudando!</Spanish>
+                <Japanese>あなたは治療を受けている!</Japanese>
+            </Key>
+        </Container>
+        <Container name="cba">
+            <Key ID="STR_TunCon_CBA_enableUnconInfo">
+                <Original>Enable uncon info</Original>
+                <English>Enable uncon info</English>
+                <Spanish>Activar uncon info</Spanish>
+                <Japanese>アンコン インフォを有効化</Japanese>
+            </Key>
+            <Key ID="STR_TunCon_CBA_enableUnconInfoTooltip">
+                <Original>Enanbles uncon to know whats going around them. Own vitals and if friendlies nearby.</Original>
+                <English>Enanbles uncon to know whats going around them. Own vitals and if friendlies nearby.</English>
+                <Spanish>Permite que uncon sepa que pasa alrededor. Tus propias vitales y si hay aliados cerca</Spanish>
+                <Japanese>アンコン インフォを有効化すると気絶中に付近の友軍の有無や自分のバイタルを感じることができます。</Japanese>
+            </Key>
+            <Key ID="STR_TunCon_CBA_enableShowingNearestUnit">
+                <Original>Enable showing nearest unit</Original>
+                <English>Enable showing nearest unit</English>
+                <Spanish>Activar mostrar el aliado mas cercano</Spanish>
+                <Japanese>付近の友軍情報表示を有効化</Japanese>
+            </Key>
+            <Key ID="STR_TunCon_CBA_enableShowingNearestUnitTooltip">
+                <Original>Enables showing if there is nearby friendly units</Original>
+                <English>Enables showing if there is nearby friendly units</English>
+                <Spanish>Enables showing if there is nearby friendly units</Spanish>
+                <Japanese>付近の友軍情報表示を有効化すると近くに味方がいるときにその情報を表示します</Japanese>
+            </Key>
+            <Key ID="STR_TunCon_CBA_enableShowingDistance">
+                <Original>Enable showing nearest unit distance</Original>
+                <English>Enable showing nearest unit distance</English>
+                <Spanish>Enable showing nearest unit distance</Spanish>
+                <Japanese>付近の友軍距離表示を有効化</Japanese>
+            </Key>
+            <Key ID="STR_TunCon_CBA_enableShowingDistanceTooltip">
+                <Original>Enable showing closest friendlies distance</Original>
+                <English>Enable showing closest friendlies distance</English>
+                <Spanish>Enable showing closest friendlies distance</Spanish>
+                <Japanese>付近の友軍距離表示を有効化すると近くにいる味方までの距離を表示します</Japanese>
+            </Key>
+            <Key ID="STR_TunCon_CBA_distanceToLookFriendlies">
+                <Original>Distance for looking closest friendly</Original>
+                <English>Distance for looking closest friendly</English>
+                <Spanish>Distance for looking closest friendly</Spanish>
+                <Japanese>情報表示する友軍までの距離</Japanese>
+            </Key>
+            <Key ID="STR_TunCon_CBA_distanceToLookFriendliesTooltip">
+                <Original>Distance in meters to find nearest friendly and medic</Original>
+                <English>Distance in meters to find nearest friendly and medic</English>
+                <Spanish>Distance in meters to find nearest friendly and medic</Spanish>
+                <Japanese>情報表示することができる友軍までの最も遠い距離範囲(メートル)</Japanese>
+            </Key>
+            <Key ID="STR_TunCon_CBA_noFriends">
+                <Original>Text if no friendlies nearby and no vitals</Original>
+                <English>Text if no friendlies nearby and no vitals</English>
+                <Spanish>Text if no friendlies nearby and no vitals</Spanish>
+                <Japanese>友軍不在でバイタル不安定時に表示するテキスト</Japanese>
+            </Key>
+            <Key ID="STR_TunCon_CBA_noFriendsTooltip">
+                <Original>Text what is shown when player has bad vitals and no friendlies nearby</Original>
+                <English>Text what is shown when player has bad vitals and no friendlies nearby</English>
+                <Spanish>Text what is shown when player has bad vitals and no friendlies nearby</Spanish>
+                <Japanese>プレイヤーの近辺に友軍が不在でかつバイタルが不安定(目覚める可能性が無い)時に表示するテキスト</Japanese>
+            </Key>
+            <Key ID="STR_TunCon_CBA_enableShowIfTreated">
+                <Original>Enable showing if player is treated</Original>
+                <English>Enable showing if player is treated</English>
+                <Spanish>Enable showing if player is treated</Spanish>
+                <Japanese>プレイヤーが治療を受けたことを表示</Japanese>
+            </Key>
+            <Key ID="STR_TunCon_CBA_enableShowIfTreatedTooltip">
+                <Original>Enables showing text that player is being treated</Original>
+                <English>Enables showing text that player is being treated</English>
+                <Spanish>Enables showing text that player is being treated</Spanish>
+                <Japanese>プレイヤーが治療を受けていることをテキスト表示できるようにします</Japanese>
+            </Key>
+            <Key ID="STR_TunCon_CBA_updateInterval">
+                <Original>Update interval</Original>
+                <English>Update interval</English>
+                <Spanish>Update interval</Spanish>
+                <Japanese>更新間隔</Japanese>
+            </Key>
+            <Key ID="STR_TunCon_CBA_updateIntervalTooltip">
+                <Original>Time between texts update. (Seconds)</Original>
+                <English>Time between texts update. (Seconds)</English>
+                <Spanish>Time between texts update. (Seconds)</Spanish>
+                <Japanese>表示テキストの更新間隔。(秒)</Japanese>
+            </Key>
+            <Key ID="STR_TunCon_CBA_enableShowEpinephrine">
+                <Original>Enable showing Epinephrine</Original>
+                <English>Enable showing Epinephrine</English>
+                <Spanish>Enable showing Epinephrine</Spanish>
+            </Key>
+            <Key ID="STR_TunCon_CBA_enableShowEpinephrineTooltip">
+                <Original>Enable showing text if player has Epinephrine in his system</Original>
+                <English>Enable showing text if player has Epinephrine in his system</English>
+                <Spanish>Enable showing text if player has Epinephrine in his system</Spanish>
+            </Key>
+            <Key ID="STR_TunCon_CBA_enableShowBleeding">
+                <Original>Enable showing bleeding</Original>
+                <English>Enable showing bleeding</English>
+                <Spanish>Enable showing bleeding</Spanish>
+            </Key>
+            <Key ID="STR_TunCon_CBA_enableShowBleedingTooltip">
+                <Original>Enable showing text that player is bleeding</Original>
+                <English>Enable showing text that player is bleeding</English>
+                <Spanish>Enable showing text that player is bleeding</Spanish>
+            </Key>
+            <Key ID="STR_TunCon_CBA_enableShowCardiacArrest">
+                <Original>Enable showing Cardiac arrest</Original>
+                <English>Enable showing Cardiac arrest</English>
+                <Spanish>Enable showing Cardiac arrest</Spanish>
+            </Key>
+            <Key ID="STR_TunCon_CBA_enableShowCardiacArrestTooltip">
+                <Original>Enable showing if player is in cardiac arrest</Original>
+                <English>Enable showing if player is in cardiac arrest</English>
+                <Spanish>Enable showing if player is in cardiac arrest</Spanish>
+            </Key>
+            <Key ID="STR_TunCon_CBA_enableShowHeartRate">
+                <Original>Enable showing heart rate</Original>
+                <English>Enable showing heart rate</English>
+                <Spanish>Enable showing heart rate</Spanish>
+            </Key>
+            <Key ID="STR_TunCon_CBA_enableShowHeartRateTooltip">
+                <Original>Enable showing heart rate for player</Original>
+                <English>Enable showing heart rate for player</English>
+                <Spanish>Enable showing heart rate for player</Spanish>
+            </Key>
+            <Key ID="STR_TunCon_CBA_enableShowStableVitals">
+                <Original>Enable showing stable vitals</Original>
+                <English>Enable showing stable vitals</English>
+                <Spanish>Enable showing stable vitals</Spanish>
+            </Key>
+            <Key ID="STR_TunCon_CBA_enableShowStableVitalsTooltip">
+                <Original>Enable showing if player has stable or unstable vitals</Original>
+                <English>Enable showing if player has stable or unstable vitals</English>
+                <Spanish>Enable showing if player has stable or unstable vitals</Spanish>
+            </Key>
+        </Container>
+    </Package>
 </Project>
