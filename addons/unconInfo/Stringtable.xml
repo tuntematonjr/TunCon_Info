@@ -13,6 +13,7 @@
         <Portuguese>You sense that</Portuguese>
         <Russian>You sense that</Russian>
         <German>You sense that</German>
+        <Japanese>あなたが感じていることは次の通り</Japanese>
       </Key>
       <Key ID="STR_TunCon_isBleeding">
         <Original>You are bleeding</Original>
@@ -25,6 +26,7 @@
         <Portuguese>You are bleeding</Portuguese>
         <Russian>You are bleeding</Russian>
         <German>You are bleeding</German>
+        <Japanese>あなたは出血している</Japanese>
       </Key>
       <Key ID="STR_TunCon_hasPulse">
         <Original>You still have pulse</Original>
@@ -37,6 +39,7 @@
         <Portuguese>You still have pulse</Portuguese>
         <Russian>You still have pulse</Russian>
         <German>You still have pulse</German>
+        <Japanese>あなたはまだ脈拍がある</Japanese>
       </Key>
       <Key ID="STR_TunCon_inCardiacArrest">
         <Original>You are in cardiac arrest</Original>
@@ -49,6 +52,7 @@
         <Portuguese>You are in cardiac arrest</Portuguese>
         <Russian>You are in cardiac arrest</Russian>
         <German>You are in cardiac arrest</German>
+        <Japanese>あなたは心停止している</Japanese>
       </Key>
       <Key ID="STR_TunCon_hasStableVitals">
         <Original>You have stable vitals (you can wake up)</Original>
@@ -61,6 +65,7 @@
         <Portuguese>You have stable vitals (you can wake up)</Portuguese>
         <Russian>You have stable vitals (you can wake up)</Russian>
         <German>You have stable vitals (you can wake up)</German>
+        <Japanese>あなたのバイタルは安定している (目覚める可能性がある)</Japanese>
       </Key>
       <Key ID="STR_TunCon_notStableVitals">
         <Original>You don't have stable vitals (This prevents you from waking up)</Original>
@@ -73,6 +78,7 @@
         <Portuguese>You don't have stable vitals (This prevents you from waking up)</Portuguese>
         <Russian>You don't have stable vitals (This prevents you from waking up)</Russian>
         <German>You don't have stable vitals (This prevents you from waking up)</German>
+        <Japanese>あなたのバイタルは安定していない (目覚めることは出来ない)</Japanese>
       </Key>
       <Key ID="STR_TunCon_hasepinEphrine">
         <Original>You have epinephrine in your system (Significantly higher chance of waking up)</Original>
@@ -85,6 +91,7 @@
         <Portuguese>You have epinephrine in your system (Significantly higher chance of waking up)</Portuguese>
         <Russian>You have epinephrine in your system (Significantly higher chance of waking up)</Russian>
         <German>You have epinephrine in your system (Significantly higher chance of waking up)</German>
+        <Japanese>あなたはアドレナリンを打たれている (目覚める確率が上がっている)</Japanese>
       </Key>
       <Key ID="STR_TunCon_noFriends">
         <Original>There are no friendlies nearby</Original>
@@ -97,6 +104,7 @@
         <Portuguese>There are no friendlies nearby</Portuguese>
         <Russian>There are no friendlies nearby</Russian>
         <German>There are no friendlies nearby</German>
+        <Japanese>友軍は付近に居ないようです</Japanese>
       </Key>
       <Key ID="STR_TunCon_closestUnitWithDistance">
         <Original>%1Closest unit is %2 and %2 medic (%3m)</Original>
@@ -109,6 +117,7 @@
         <Portuguese>%1Closest unit is %2 and %2 medic (%3m)</Portuguese>
         <Russian>%1Closest unit is %2 and %2 medic (%3m)</Russian>
         <German>%1Closest unit is %2 and %2 medic (%3m)</German>
+        <Japanese>%1最も近い友軍は %2 で衛生兵です (%3m)</Japanese>
       </Key>
       <Key ID="STR_TunCon_closestUnitWithOutDistance">
         <Original>%1Closest unit is %2 and %2 medic</Original>
@@ -121,6 +130,7 @@
         <Portuguese>%1Closest unit is %2 and %2 medic</Portuguese>
         <Russian>%1Closest unit is %2 and %2 medic</Russian>
         <German>%1Closest unit is %2 and %2 medic</German>
+        <Japanese>%1最も近い友軍は %2 で衛生兵です</Japanese>
       </Key>
       <Key ID="STR_TunCon_closestUnitAndMedicWithDistance">
         <Original>%1Closest unit is %2 (%3m)&lt;br/&gt;Closest medic is %4 (%5m)</Original>
@@ -133,6 +143,7 @@
         <Portuguese>%1Closest unit is %2 (%3m)&lt;br/&gt;Closest medic is %4 (%5m)</Portuguese>
         <Russian>%1Closest unit is %2 (%3m)&lt;br/&gt;Closest medic is %4 (%5m)</Russian>
         <German>%1Closest unit is %2 (%3m)&lt;br/&gt;Closest medic is %4 (%5m)</German>
+        <Japanese>%1最も近い友軍は %2 です (%3m)&lt;br/&gt;最も近い衛生兵は %4 です (%5m)</Japanese>
       </Key>
       <Key ID="STR_TunCon_closestUnitAndMedicWithOutDistance">
         <Original>%1Closest unit is %2&lt;br/&gt;Closest medic is %3</Original>
@@ -145,6 +156,7 @@
         <Portuguese>%1Closest unit is %2&lt;br/&gt;Closest medic is %3</Portuguese>
         <Russian>%1Closest unit is %2&lt;br/&gt;Closest medic is %3</Russian>
         <German>%1Closest unit is %2&lt;br/&gt;Closest medic is %3</German>
+        <Japanese>%1最も近い友軍は %2 です&lt;br/&gt;最も近い衛生兵は %3 です</Japanese>
       </Key>
       <Key ID="STR_TunCon_closestUnitNoMedicWithDistance">
         <Original>%1Closest unit is %2 (%3m), but no medics nearby</Original>
@@ -157,6 +169,7 @@
         <Portuguese>%1Closest unit is %2 (%3m), but no medics nearby</Portuguese>
         <Russian>%1Closest unit is %2 (%3m), but no medics nearby</Russian>
         <German>%1Closest unit is %2 (%3m), but no medics nearby</German>
+        <Japanese>%1最も近い友軍は %2 です (%3m), しかし付近に衛生兵はいません</Japanese>
       </Key>
       <Key ID="STR_TunCon_closestUnitNoMedicWithOutDistance">
         <Original>%1Closest unit is %2, but no medics nearby</Original>
@@ -169,6 +182,7 @@
         <Portuguese>%1Closest unit is %2, but no medics nearby</Portuguese>
         <Russian>%1Closest unit is %2, but no medics nearby</Russian>
         <German>%1Closest unit is %2, but no medics nearby</German>
+        <Japanese>%1最も近い友軍は %2 です, しかし付近に衛生兵はいません</Japanese>
       </Key>
       <Key ID="STR_TunCon_isBeingHelpedText">
         <Original>You are being helped!</Original>
@@ -181,6 +195,7 @@
         <Portuguese>You are being helped!</Portuguese>
         <Russian>You are being helped!</Russian>
         <German>You are being helped!</German>
+        <Japanese>あなたは治療を受けている!</Japanese>
       </Key>
     </Container>
     <Container name="cba">
@@ -195,6 +210,7 @@
         <Portuguese>Enable uncon info</Portuguese>
         <Russian>Enable uncon info</Russian>
         <German>Enable uncon info</German>
+        <Japanese>アンコン インフォを有効化</Japanese>
       </Key>
       <Key ID="STR_TunCon_CBA_enableUnconInfoTooltip">
         <Original>Enanbles uncon to know whats going around them. Own vitals and if friendlies nearby.</Original>
@@ -207,6 +223,7 @@
         <Portuguese>Enanbles uncon to know whats going around them. Own vitals and if friendlies nearby.</Portuguese>
         <Russian>Enanbles uncon to know whats going around them. Own vitals and if friendlies nearby.</Russian>
         <German>Enanbles uncon to know whats going around them. Own vitals and if friendlies nearby.</German>
+        <Japanese>アンコン インフォを有効化すると気絶中に付近の友軍の有無や自分のバイタルを感じることができます。</Japanese>
       </Key>
       <Key ID="STR_TunCon_CBA_enableShowingNearestUnit">
         <Original>Enable showing nearest unit</Original>
@@ -219,6 +236,7 @@
         <Portuguese>Enable showing nearest unit</Portuguese>
         <Russian>Enable showing nearest unit</Russian>
         <German>Enable showing nearest unit</German>
+        <Japanese>付近の友軍情報表示を有効化</Japanese>
       </Key>
       <Key ID="STR_TunCon_CBA_enableShowingNearestUnitTooltip">
         <Original>Enables showing if there is nearby friendly units</Original>
@@ -231,6 +249,7 @@
         <Portuguese>Enables showing if there is nearby friendly units</Portuguese>
         <Russian>Enables showing if there is nearby friendly units</Russian>
         <German>Enables showing if there is nearby friendly units</German>
+        <Japanese>付近の友軍情報表示を有効化すると近くに味方がいるときにその情報を表示します</Japanese>
       </Key>
       <Key ID="STR_TunCon_CBA_enableShowingDistance">
         <Original>Enable showing nearest unit distance</Original>
@@ -243,6 +262,7 @@
         <Portuguese>Enable showing nearest unit distance</Portuguese>
         <Russian>Enable showing nearest unit distance</Russian>
         <German>Enable showing nearest unit distance</German>
+        <Japanese>付近の友軍距離表示を有効化</Japanese>
       </Key>
       <Key ID="STR_TunCon_CBA_enableShowingDistanceTooltip">
         <Original>Enable showing closest friendlies distance</Original>
@@ -255,6 +275,7 @@
         <Portuguese>Enable showing closest friendlies distance</Portuguese>
         <Russian>Enable showing closest friendlies distance</Russian>
         <German>Enable showing closest friendlies distance</German>
+        <Japanese>付近の友軍距離表示を有効化すると近くにいる味方までの距離を表示します</Japanese>
       </Key>
       <Key ID="STR_TunCon_CBA_distanceToLookFriendlies">
         <Original>Distance for looking closest friendly</Original>
@@ -267,6 +288,7 @@
         <Portuguese>Distance for looking closest friendly</Portuguese>
         <Russian>Distance for looking closest friendly</Russian>
         <German>Distance for looking closest friendly</German>
+        <Japanese>情報表示する友軍までの距離</Japanese>
       </Key>
       <Key ID="STR_TunCon_CBA_distanceToLookFriendliesTooltip">
         <Original>Distance in meters to find nearest friendly and medic</Original>
@@ -279,6 +301,7 @@
         <Portuguese>Distance in meters to find nearest friendly and medic</Portuguese>
         <Russian>Distance in meters to find nearest friendly and medic</Russian>
         <German>Distance in meters to find nearest friendly and medic</German>
+        <Japanese>情報表示することができる友軍までの最も遠い距離範囲(メートル)</Japanese>
       </Key>
       <Key ID="STR_TunCon_CBA_noFriends">
         <Original>Text if no friendlies nearby and no vitals</Original>
@@ -291,6 +314,7 @@
         <Portuguese>Text if no friendlies nearby and no vitals</Portuguese>
         <Russian>Text if no friendlies nearby and no vitals</Russian>
         <German>Text if no friendlies nearby and no vitals</German>
+        <Japanese>友軍不在でバイタル不安定時に表示するテキスト</Japanese>
       </Key>
       <Key ID="STR_TunCon_CBA_noFriendsTooltip">
         <Original>Text what is shown when player has bad vitals and no friendlies nearby</Original>
@@ -303,6 +327,7 @@
         <Portuguese>Text what is shown when player has bad vitals and no friendlies nearby</Portuguese>
         <Russian>Text what is shown when player has bad vitals and no friendlies nearby</Russian>
         <German>Text what is shown when player has bad vitals and no friendlies nearby</German>
+        <Japanese>プレイヤーの近辺に友軍が不在でかつバイタルが不安定(目覚める可能性が無い)時に表示するテキスト</Japanese>
       </Key>
       <Key ID="STR_TunCon_CBA_enableShowIfTreated">
         <Original>Enable showing if player is treated</Original>
@@ -315,6 +340,7 @@
         <Portuguese>Enable showing if player is treated</Portuguese>
         <Russian>Enable showing if player is treated</Russian>
         <German>Enable showing if player is treated</German>
+        <Japanese>プレイヤーが治療を受けたことを表示</Japanese>
       </Key>
       <Key ID="STR_TunCon_CBA_enableShowIfTreatedTooltip">
         <Original>Enables showing text that player is being treated</Original>
@@ -327,6 +353,7 @@
         <Portuguese>Enables showing text that player is being treated</Portuguese>
         <Russian>Enables showing text that player is being treated</Russian>
         <German>Enables showing text that player is being treated</German>
+        <Japanese>プレイヤーが治療を受けていることをテキスト表示できるようにします</Japanese>
       </Key>
       <Key ID="STR_TunCon_CBA_updateInterval">
         <Original>Update interval</Original>
@@ -339,6 +366,7 @@
         <Portuguese>Update interval</Portuguese>
         <Russian>Update interval</Russian>
         <German>Update interval</German>
+        <Japanese>更新間隔</Japanese>
       </Key>
       <Key ID="STR_TunCon_CBA_updateIntervalTooltip">
         <Original>Time between texts update. (Seconds)</Original>
@@ -351,6 +379,7 @@
         <Portuguese>Time between texts update. (Seconds)</Portuguese>
         <Russian>Time between texts update. (Seconds)</Russian>
         <German>Time between texts update. (Seconds)</German>
+        <Japanese>表示テキストの更新間隔。(秒)</Japanese>
       </Key>
       <Key ID="STR_TunCon_CBA_enableShowEpinephrine">
         <Original>Enable showing Epinephrine</Original>
