@@ -115,118 +115,97 @@
             <Key ID="STR_TunCon_CBA_enableShowingNearestUnitTooltip">
                 <Original>Enables showing if there is nearby friendly units</Original>
                 <English>Enables showing if there is nearby friendly units</English>
-                <Spanish>Enables showing if there is nearby friendly units</Spanish>
                 <Japanese>付近の友軍情報表示を有効化すると近くに味方がいるときにその情報を表示します</Japanese>
             </Key>
             <Key ID="STR_TunCon_CBA_enableShowingDistance">
                 <Original>Enable showing nearest unit distance</Original>
                 <English>Enable showing nearest unit distance</English>
-                <Spanish>Enable showing nearest unit distance</Spanish>
                 <Japanese>付近の友軍距離表示を有効化</Japanese>
             </Key>
             <Key ID="STR_TunCon_CBA_enableShowingDistanceTooltip">
                 <Original>Enable showing closest friendlies distance</Original>
                 <English>Enable showing closest friendlies distance</English>
-                <Spanish>Enable showing closest friendlies distance</Spanish>
                 <Japanese>付近の友軍距離表示を有効化すると近くにいる味方までの距離を表示します</Japanese>
             </Key>
             <Key ID="STR_TunCon_CBA_distanceToLookFriendlies">
                 <Original>Distance for looking closest friendly</Original>
                 <English>Distance for looking closest friendly</English>
-                <Spanish>Distance for looking closest friendly</Spanish>
                 <Japanese>情報表示する友軍までの距離</Japanese>
             </Key>
             <Key ID="STR_TunCon_CBA_distanceToLookFriendliesTooltip">
                 <Original>Distance in meters to find nearest friendly and medic</Original>
                 <English>Distance in meters to find nearest friendly and medic</English>
-                <Spanish>Distance in meters to find nearest friendly and medic</Spanish>
                 <Japanese>情報表示することができる友軍までの最も遠い距離範囲(メートル)</Japanese>
             </Key>
             <Key ID="STR_TunCon_CBA_noFriends">
                 <Original>Text if no friendlies nearby and no vitals</Original>
                 <English>Text if no friendlies nearby and no vitals</English>
-                <Spanish>Text if no friendlies nearby and no vitals</Spanish>
                 <Japanese>友軍不在でバイタル不安定時に表示するテキスト</Japanese>
             </Key>
             <Key ID="STR_TunCon_CBA_noFriendsTooltip">
                 <Original>Text what is shown when player has bad vitals and no friendlies nearby</Original>
                 <English>Text what is shown when player has bad vitals and no friendlies nearby</English>
-                <Spanish>Text what is shown when player has bad vitals and no friendlies nearby</Spanish>
                 <Japanese>プレイヤーの近辺に友軍が不在でかつバイタルが不安定(目覚める可能性が無い)時に表示するテキスト</Japanese>
             </Key>
             <Key ID="STR_TunCon_CBA_enableShowIfTreated">
                 <Original>Enable showing if player is treated</Original>
                 <English>Enable showing if player is treated</English>
-                <Spanish>Enable showing if player is treated</Spanish>
                 <Japanese>プレイヤーが治療を受けたことを表示</Japanese>
             </Key>
             <Key ID="STR_TunCon_CBA_enableShowIfTreatedTooltip">
                 <Original>Enables showing text that player is being treated</Original>
                 <English>Enables showing text that player is being treated</English>
-                <Spanish>Enables showing text that player is being treated</Spanish>
                 <Japanese>プレイヤーが治療を受けていることをテキスト表示できるようにします</Japanese>
             </Key>
             <Key ID="STR_TunCon_CBA_updateInterval">
                 <Original>Update interval</Original>
                 <English>Update interval</English>
-                <Spanish>Update interval</Spanish>
                 <Japanese>更新間隔</Japanese>
             </Key>
             <Key ID="STR_TunCon_CBA_updateIntervalTooltip">
                 <Original>Time between texts update. (Seconds)</Original>
                 <English>Time between texts update. (Seconds)</English>
-                <Spanish>Time between texts update. (Seconds)</Spanish>
                 <Japanese>表示テキストの更新間隔。(秒)</Japanese>
             </Key>
             <Key ID="STR_TunCon_CBA_enableShowEpinephrine">
                 <Original>Enable showing Epinephrine</Original>
                 <English>Enable showing Epinephrine</English>
-                <Spanish>Enable showing Epinephrine</Spanish>
             </Key>
             <Key ID="STR_TunCon_CBA_enableShowEpinephrineTooltip">
                 <Original>Enable showing text if player has Epinephrine in his system</Original>
                 <English>Enable showing text if player has Epinephrine in his system</English>
-                <Spanish>Enable showing text if player has Epinephrine in his system</Spanish>
             </Key>
             <Key ID="STR_TunCon_CBA_enableShowBleeding">
                 <Original>Enable showing bleeding</Original>
                 <English>Enable showing bleeding</English>
-                <Spanish>Enable showing bleeding</Spanish>
             </Key>
             <Key ID="STR_TunCon_CBA_enableShowBleedingTooltip">
                 <Original>Enable showing text that player is bleeding</Original>
                 <English>Enable showing text that player is bleeding</English>
-                <Spanish>Enable showing text that player is bleeding</Spanish>
             </Key>
             <Key ID="STR_TunCon_CBA_enableShowCardiacArrest">
                 <Original>Enable showing Cardiac arrest</Original>
                 <English>Enable showing Cardiac arrest</English>
-                <Spanish>Enable showing Cardiac arrest</Spanish>
             </Key>
             <Key ID="STR_TunCon_CBA_enableShowCardiacArrestTooltip">
                 <Original>Enable showing if player is in cardiac arrest</Original>
                 <English>Enable showing if player is in cardiac arrest</English>
-                <Spanish>Enable showing if player is in cardiac arrest</Spanish>
             </Key>
             <Key ID="STR_TunCon_CBA_enableShowHeartRate">
                 <Original>Enable showing heart rate</Original>
                 <English>Enable showing heart rate</English>
-                <Spanish>Enable showing heart rate</Spanish>
             </Key>
             <Key ID="STR_TunCon_CBA_enableShowHeartRateTooltip">
                 <Original>Enable showing heart rate for player</Original>
                 <English>Enable showing heart rate for player</English>
-                <Spanish>Enable showing heart rate for player</Spanish>
             </Key>
             <Key ID="STR_TunCon_CBA_enableShowStableVitals">
                 <Original>Enable showing stable vitals</Original>
                 <English>Enable showing stable vitals</English>
-                <Spanish>Enable showing stable vitals</Spanish>
             </Key>
             <Key ID="STR_TunCon_CBA_enableShowStableVitalsTooltip">
                 <Original>Enable showing if player has stable or unstable vitals</Original>
                 <English>Enable showing if player has stable or unstable vitals</English>
-                <Spanish>Enable showing if player has stable or unstable vitals</Spanish>
             </Key>
         </Container>
     </Package>
