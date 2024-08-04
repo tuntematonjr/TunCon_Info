@@ -3,17 +3,18 @@
 //Add uncon info EH
 private _id = ["ace_unconscious", {
 	_this params ["_unit", "_state"];
-	if ( _state &&  _unit isEqualTo player && GVAR(enableUnconInfo)) then {
+	if ( _state && _unit isEqualTo ace_player && GVAR(enableUnconInfo)) then {
 		GVAR(isBeingHelped) = false;
+		GVAR(treatments) = [];
 
-		_handle = [{
+		private _handle = [{
 
 			if (GVAR(isBeingHelped)) then {
 				GVAR(isBeingHelpedTime) = cba_missionTime + 20;
 				GVAR(isBeingHelped) = false;
 			};
 
-			if (!(player getVariable ["ACE_isUnconscious", false]) || {!alive player}) exitWith {
+			if (!(ace_player getVariable ["ACE_isUnconscious", false]) || {!alive ace_player}) exitWith {
 				cutText ["", "PLAIN NOFADE", -1, false, true];
 				[_handle] call CBA_fnc_removePerFrameHandler; 
 			};
@@ -27,10 +28,24 @@ private _id = ["ace_unconscious", {
 	};
 }] call CBA_fnc_addEventHandler;
 
-{// Based on FPARMA version, credits to them for it. Modified to use uncon info text.
-	["ace_medical_treatment_" + _x, {
-		if (lifeState ace_player == "INCAPACITATED" && GVAR(enableShowIfTreated)) then {
-			GVAR(isBeingHelped) = true;
-		};
-	}] call CBA_fnc_addEventHandler;
-} foreach ["bandageLocal", "checkBloodPressureLocal", "cprLocal", "fullHealLocal", "ivBagLocal", "medicationLocal", "splintLocal", "tourniquetLocal"];
+//local events for medic
+["ace_treatmentStarted", {
+	params ["_medic", "_patient", "_bodyPart", "_classname", "_itemUser", "_usedItem", "_createLitter"];
+	[QGVAR(ace_treatmentToPatient), [1, _medic, _patient, _bodyPart, _classname], _patient] call CBA_fnc_targetEvent;
+}] call CBA_fnc_addEventHandler;
+
+["ace_treatmentSucceded", {
+	params ["_medic", "_patient", "_bodyPart", "_classname", "_itemUser", "_usedItem", "_createLitter"];
+	[QGVAR(ace_treatmentToPatient), [2, _medic, _patient, _bodyPart, _classname], _patient] call CBA_fnc_targetEvent;
+}] call CBA_fnc_addEventHandler;
+
+["ace_treatmentFailed", {
+	params ["_medic", "_patient", "_bodyPart", "_classname", "_itemUser", "_usedItem", "_createLitter"];
+	[QGVAR(ace_treatmentToPatient), [3, _medic, _patient, _bodyPart, _classname], _patient] call CBA_fnc_targetEvent;
+}] call CBA_fnc_addEventHandler;
+
+//event to transfer local events to patients
+[QGVAR(ace_treatmentToPatient), {
+	params ["_event", "_medic", "_patient", "_bodyPart", "_classname"];
+	[_event, _medic, _patient, toLower _bodyPart, _classname] call FUNC(treatmentEH);
+}] call CBA_fnc_addEventHandler;

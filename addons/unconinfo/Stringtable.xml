@@ -92,6 +92,46 @@
                 <Spanish>¡Te estan ayudando!</Spanish>
                 <Japanese>あなたは治療を受けている!</Japanese>
             </Key>
+            <Key ID="STR_TunCon_CBA_enableShowIfTreatedConcious">
+                <Original>Enable showing if player is treated concious</Original>
+                <English>Enable showing if player is treated concious</English>
+            </Key>
+            <Key ID="STR_TunCon_CBA_enableShowIfTreatedConciousTooltip">
+                <Original>Enables showing text that player is being treated while concious</Original>
+                <English>Enables showing text that player is being treated while concious</English>
+            </Key>
+            <Key ID="STR_TunCon_EH_startedTreatment">
+                <Original>%1 is %2 on your %3</Original>
+                <English>%1 is %2 on your %3</English>
+            </Key>
+            <Key ID="STR_TunCon_EH_succededTreatment">
+                <Original>%1 completed treatment %2 on %3</Original>
+                <English>%1 completed treatment %2 on %3</English>
+            </Key>
+            <Key ID="STR_TunCon_EH_failedTreatment">
+                <Original>%1 failed treatment %2 on %3</Original>
+                <English>%1 failed treatment %2 on %3</English>
+            </Key>
+            <Key ID="STR_TunCon_treatments">
+                <Original>Treatments:</Original>
+                <English>Treatments:</English>
+            </Key>
+            <Key ID="STR_TunCon_EH_succededTreatmentStructured">
+                <Original>%1 &lt;t color='#008000'&gt;completed&lt;/t&gt; treatment %2 on %3</Original>
+                <English>%1 &lt;t color='#008000'&gt;completed&lt;/t&gt; treatment %2 on %3</English>
+            </Key>
+            <Key ID="STR_TunCon_EH_failedTreatmentStructured">
+                <Original>%1 &lt;t color='#CC0000'&gt;failed&lt;/t&gt; treatment %2 on %3</Original>
+                <English>%1 &lt;t color='#CC0000'&gt;failed&lt;/t&gt; treatment %2 on %3</English>
+            </Key>
+            <Key ID="STR_TunCon_CBA_enableShowDetailedTreatment">
+                <Original>Enable showing detailed list of treatments</Original>
+                <English>Enable showing detailed list of treatments</English>
+            </Key>
+            <Key ID="STR_TunCon_CBA_enableShowDetailedTreatmentTooltip">
+                <Original>Enable showing detailed list of all treatments made to you</Original>
+                <English>Enable showing detailed list of all treatments made to you</English>
+            </Key>
         </Container>
         <Container name="cba">
             <Key ID="STR_TunCon_CBA_enableUnconInfo">
