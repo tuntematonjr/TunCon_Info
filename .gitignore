@@ -19,9 +19,11 @@ extensions/vcproj32/*
 extensions/vcproj64/*
 hemtt
 hemtt.exe
+pohja.sqf
 release/*
 releases/*
 sqfvm.exe
+template/*
 texHeaders.bin
 Thumbs.db
 tools/temp
