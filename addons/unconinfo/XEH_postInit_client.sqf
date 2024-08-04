@@ -19,6 +19,8 @@ private _id = ["ace_unconscious", {
 				[_handle] call CBA_fnc_removePerFrameHandler; 
 			};
 
+			[ace_player, round random 2] call FUNC(moan);
+
 			//Dont run at curator screen
 			if (isnull curatorCamera) then {
 				[] call FUNC(unconInfo);
