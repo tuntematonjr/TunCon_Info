@@ -1,5 +1,5 @@
 name = "TunCon"
-prefix = "tuncon"
+prefix = "TunCon"
 author = "Tuntematon"
 mainprefix = "x"
 
@@ -22,7 +22,6 @@ enabled = false
 workshop = [
     "450814997",
     "463939057",
-    "623475643",
 ]
 parameters = [
     "-skipIntro",           # These parameters are passed to the Arma 3 executable
@@ -30,5 +29,5 @@ parameters = [
     "-showScriptErrors",    # You can add additional parameters here
     "-debug",
     "-filePatching",
-    "C:\\Users\\mikal\\Documents\\Arma 3 - Other Profiles\\Tuntematon\\missions\\unconTest.enoch\\mission.sqm", # Launch into existing Editor Mission - \\ needed
+    "C:\\Users\\mikal\\Documents\\Arma 3 - Other Profiles\\Tuntematon\\missions\\startmarkers.Enoch\\mission.sqm", # Launch into existing Editor Mission - \\ needed
 ]

@@ -14,25 +14,21 @@
  */
 #include "script_component.hpp"
 
-#define TEXTSIZE_NORMAL	"1.75"
-#define TEXTSIZE_SMALL	"1.25"
-
-
 private _text = localize "STR_TunCon_firstLine" + "<br/>";
-private _bleeding = ace_player getvariable ["ace_medical_woundBleeding", 0];
-private _hasStableVitals = [ace_player] call ace_medical_status_fnc_hasStableVitals;
+private _bleeding = player getvariable ["ace_medical_woundBleeding", 0];
+private _hasStableVitals = [player] call ace_medical_status_fnc_hasStableVitals;
 
 if (GVAR(enableShowBleeding) && _bleeding > 0) then {
 	_text = _text + localize "STR_TunCon_isBleeding" + "<br/>";
 };
 
 //Heart rate/
-if (ace_player getvariable ["ace_medical_inCardiacArrest", false]) then {
+if (player getvariable ["ace_medical_inCardiacArrest", false]) then {
 	if (GVAR(enableShowCardiacArrest)) then {
 		_text = _text + localize "STR_TunCon_inCardiacArrest" + "<br/>";
 	};
 } else {
-	if (GVAR(enableShowHeartRate) && {ace_player getvariable ["ace_medical_heartRate", 0] > 0}) then {
+	if (GVAR(enableShowHeartRate) && {player getvariable ["ace_medical_heartRate", 0] > 0}) then {
 		_text = _text + localize "STR_TunCon_hasPulse" + "<br/>";
 	};
 
@@ -41,7 +37,7 @@ if (ace_player getvariable ["ace_medical_inCardiacArrest", false]) then {
 			_text = _text + localize "STR_TunCon_hasStableVitals" + "<br/>";
 		};
 
-		if (GVAR(enableShowEpinephrine) && {[ace_player, "Epinephrine"] call ace_medical_status_fnc_getMedicationCount > 0}) then {
+		if (GVAR(enableShowEpinephrine) && {[player, "Epinephrine"] call ace_medical_status_fnc_getMedicationCount > 0}) then {
 			_text = _text + localize "STR_TunCon_hasepinEphrine" + "<br/>";
 		};
 	} else {
@@ -54,8 +50,8 @@ if (ace_player getvariable ["ace_medical_inCardiacArrest", false]) then {
 if (GVAR(allowNearestUnit)) then {
 
 	private _distance = GVAR(unconInfoNearestUnitDistance);
-	private _nearUnits = (ace_player nearEntities ["CAManBase", _distance]) - [ace_player];
-	FILTER(_nearUnits,playerside isEqualTo side _x);
+	private _nearUnits = (player nearEntities ["CAManBase", _distance]) - [player];
+	FILTER(_nearUnits, playerside isEqualTo side _x);
 	private _closestUnit = objNull;
 	private _closestMedic = objNull;
 	private _closestUnitDistance = _distance;
@@ -63,7 +59,7 @@ if (GVAR(allowNearestUnit)) then {
 	private _nearestUnitDistanceAllowed = GVAR(allowNearestUnitDistanceShown);
 	{
 		private _unit = _x;
-		private _distance = ace_player distance _unit;
+		private _distance = player distance _unit;
 		if (_distance <= _closestUnitDistance && {!(_unit getVariable ["ACE_isUnconscious", false])}) then {
 			_closestUnit = _unit;
 			_closestUnitDistance = round _distance;
@@ -106,25 +102,13 @@ if (GVAR(allowNearestUnit)) then {
 	};
 };
 
-
-if (GVAR(isBeingHelpedTime) > cba_missionTime && !GVAR(enableShowDetailedTreatment)) then {
+if (GVAR(isBeingHelpedTime) > cba_missionTime) then {
 	_text = _text + "<br/>" + localize "STR_TunCon_isBeingHelpedText";
 };
 
-_text = "<t size='"+ TEXTSIZE_NORMAL +"'>"+_text+"</t>";
 
-private _treatmentList = GVAR(treatments);
-if (_treatmentList isNotEqualTo []) then {
-	_text = _text + "<br/>" + "<t size='"+ TEXTSIZE_NORMAL +"'>" + "Treatments:" + "</t>";
-	{
-		_x params [ "_treatmenText", "_time"];
-		
-		_text = _text + "<br/>" + "<t size='"+ TEXTSIZE_SMALL+"'>" + format["%1 - %2s",_treatmenText, round(cba_missiontime - _time)] + "</t>";
-	} forEachReversed _treatmentList;
-};
-
-if (_text isEqualTo "<t size='"+ TEXTSIZE_NORMAL +"'>"+(localize "STR_TunCon_firstLine" + "<br/>")+"</t>") then {
+if (_text isEqualTo localize "STR_TunCon_firstLine" + "<br/>") then {
 	_text = "";
 };
 
-cutText ["<t valign='top' align='center'>"+_text+"</t>", "PLAIN NOFADE" , -1, false, true];
+cutText ["<t size='2'>"+_text+"</t>", "PLAIN NOFADE" , -1, false, true];
