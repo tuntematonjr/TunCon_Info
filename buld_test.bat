@@ -1,2 +1,3 @@
 @echo off
-hemtt launch
+hemtt.exe launch
+pause

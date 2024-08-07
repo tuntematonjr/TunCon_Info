@@ -83,28 +83,6 @@ PREP_RECOMPILE_END;
 ] call CBA_Settings_fnc_init;
 
 [
-    QGVAR(enableShowDetailedTreatment),
-    "CHECKBOX",
-    [localize "STR_TunCon_CBA_enableShowDetailedTreatment", localize "STR_TunCon_CBA_enableShowDetailedTreatmentTooltip"],
-    ["Tun Utilities - Uncon Info", "Uncon Info"],
-    true,
-    1,
-    {},
-    true
-] call CBA_Settings_fnc_init;
-
-[
-    QGVAR(enableShowIfTreatedConcious),
-    "CHECKBOX",
-    [localize "STR_TunCon_CBA_enableShowIfTreatedConcious", localize "STR_TunCon_CBA_enableShowIfTreatedConciousTooltip"],
-    ["Tun Utilities - Uncon Info", "Uncon Info"],
-    true,
-    1,
-    {},
-    true
-] call CBA_Settings_fnc_init;
-
-[
     QGVAR(allowNearestUnit),
     "CHECKBOX",
     [localize "STR_TunCon_CBA_enableShowingNearestUnit", localize "STR_TunCon_CBA_enableShowingNearestUnitTooltip"],

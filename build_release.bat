@@ -1,3 +1,3 @@
 @echo off
-hemtt.exe release -vv
+hemtt.exe release --no-bin
 pause
