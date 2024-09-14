@@ -22,7 +22,7 @@ private _id = ["ace_unconscious", {
 			[ace_player, round random 2] call FUNC(moan);
 
 			//Dont run at curator screen
-			if (isnull curatorCamera) then {
+			if (isNull curatorCamera) then {
 				[] call FUNC(unconInfo);
 			};
 			

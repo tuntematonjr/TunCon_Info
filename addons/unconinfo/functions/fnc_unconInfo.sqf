@@ -19,7 +19,7 @@
 
 
 private _text = localize "STR_TunCon_firstLine" + "<br/>";
-private _bleeding = ace_player getvariable ["ace_medical_woundBleeding", 0];
+private _bleeding = ace_player getVariable ["ace_medical_woundBleeding", 0];
 private _hasStableVitals = [ace_player] call ace_medical_status_fnc_hasStableVitals;
 
 if (GVAR(enableShowBleeding) && _bleeding > 0) then {
@@ -27,12 +27,12 @@ if (GVAR(enableShowBleeding) && _bleeding > 0) then {
 };
 
 //Heart rate/
-if (ace_player getvariable ["ace_medical_inCardiacArrest", false]) then {
+if (ace_player getVariable ["ace_medical_inCardiacArrest", false]) then {
 	if (GVAR(enableShowCardiacArrest)) then {
 		_text = _text + localize "STR_TunCon_inCardiacArrest" + "<br/>";
 	};
 } else {
-	if (GVAR(enableShowHeartRate) && {ace_player getvariable ["ace_medical_heartRate", 0] > 0}) then {
+	if (GVAR(enableShowHeartRate) && {ace_player getVariable ["ace_medical_heartRate", 0] > 0}) then {
 		_text = _text + localize "STR_TunCon_hasPulse" + "<br/>";
 	};
 
@@ -55,7 +55,7 @@ if (GVAR(allowNearestUnit)) then {
 
 	private _distance = GVAR(unconInfoNearestUnitDistance);
 	private _nearUnits = (ace_player nearEntities ["CAManBase", _distance]) - [ace_player];
-	FILTER(_nearUnits,playerside isEqualTo side _x);
+	FILTER(_nearUnits,playerSide isEqualTo side _x);
 	private _closestUnit = objNull;
 	private _closestMedic = objNull;
 	private _closestUnitDistance = _distance;
