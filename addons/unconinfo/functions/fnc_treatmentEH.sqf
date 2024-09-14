@@ -15,8 +15,8 @@
 #include "script_component.hpp"
 
 params ["_event", "_medic", "_patient", "_bodyPart", "_classname"];
-
-if (_medic isEqualTo _patient || ace_player isNotEqualTo _patient) exitWith {};
+private _player = ace_player;
+if (_medic isEqualTo _patient || _player isNotEqualTo _patient) exitWith {};
 
 private _config = configFile >> "ACE_Medical_Treatment_Actions" >> _classname;
 private _displayName = toLower (getText (_config >> "displayName"));
@@ -24,7 +24,7 @@ private _displayNameProgress = toLower (getText (_config >> "displayNameProgress
 private _time = [dayTime] call BIS_fnc_timeToString;
 
 _medic = name _medic;
-private _isUncon = lifeState ace_player == "INCAPACITATED" && GVAR(enableShowIfTreated);
+private _isUncon = lifeState _player == "INCAPACITATED" && GVAR(enableShowIfTreated);
 
 private _text = switch (_event) do {
 	case 1: { 
@@ -55,7 +55,7 @@ if _isUncon then {
 		};
 	};
 } else {
-	if (GVAR(enableShowIfTreatedConcious) && !(ace_player getVariable ["ACE_isUnconscious", false]) && alive ace_player) then {
+	if (GVAR(enableShowIfTreatedConcious) && !(_player getVariable ["ACE_isUnconscious", false]) && alive _player) then {
 		[_text, false, 7] call ace_common_fnc_displayText;
 	};
 };

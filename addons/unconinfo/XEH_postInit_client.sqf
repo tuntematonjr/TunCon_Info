@@ -8,18 +8,18 @@ private _id = ["ace_unconscious", {
 		GVAR(treatments) = [];
 
 		private _handle = [{
-
+			private _player = ace_player;
 			if (GVAR(isBeingHelped)) then {
 				GVAR(isBeingHelpedTime) = cba_missionTime + 20;
 				GVAR(isBeingHelped) = false;
 			};
 
-			if (!(ace_player getVariable ["ACE_isUnconscious", false]) || {!alive ace_player}) exitWith {
+			if (!(_player getVariable ["ACE_isUnconscious", false]) || {!alive _player}) exitWith {
 				cutText ["", "PLAIN NOFADE", -1, false, true];
 				[_handle] call CBA_fnc_removePerFrameHandler; 
 			};
-
-			[ace_player, round random 2] call FUNC(moan);
+			
+			[_player, round random 2] call FUNC(moan);
 
 			//Dont run at curator screen
 			if (isNull curatorCamera) then {
