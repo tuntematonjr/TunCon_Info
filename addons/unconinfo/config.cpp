@@ -7,9 +7,9 @@ class CfgPatches {
         units[] = {};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {"tuncon_main"};
+        requiredAddons[] = {MAIN_ADDON_STR};
         author = "Tuntematon";
-        authorUrl = "https://github.com/tuntematonjr/TunCon_Info";
+        authorUrl = GITHUBLINK;
         //VERSION_CONFIG;
     };
 };

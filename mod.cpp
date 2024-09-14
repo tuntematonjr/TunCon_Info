@@ -14,7 +14,7 @@ tooltip         = "More info for unconscious";
 tooltipOwned    = "More info for unconscious";  // Tool tip displayed when the mouse is left over, in the main menu
 overview        = "Tun Unconscious Info v0.0.0";         // Overview text, displayed from the extension menu
 description     = "More info for unconscious"; // Probably in context with action
-action          = "https://github.com/tuntematonjr/TunCon_Info";    // Website URL, that can accessed from the expansions menu 
+action          = GITHUBLINK;    // Website URL, that can accessed from the expansions menu 
 actionName      = "Github";                 // label of button/tooltip in extension menu
 
 // Color used for DLC stripes and backgrounds (RGBA)

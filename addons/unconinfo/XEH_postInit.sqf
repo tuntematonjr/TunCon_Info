@@ -5,7 +5,7 @@
 	params ["_entity"];
 
 	_entity addEventHandler ["CuratorObjectRegistered", {
-		params ["_curator", "_input"];
+		params ["_curator"];
 		private _player = getAssignedCuratorUnit _curator;
 		[] remoteExecCall [QFUNC(hideMessage), _player, false];
 	}];
