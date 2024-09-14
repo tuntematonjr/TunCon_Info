@@ -19,9 +19,7 @@ private _id = ["ace_unconscious", {
 				[_handle] call CBA_fnc_removePerFrameHandler; 
 			};
 			
-			if (GVAR(enableMoan)) then {
-				[_player] call FUNC(moan);
-			};
+			[_player, round random 2] call FUNC(moan);
 
 			//Dont run at curator screen
 			if (isNull curatorCamera) then {
@@ -45,7 +43,7 @@ private _id = ["ace_unconscious", {
 
 ["ace_treatmentFailed", {
 	params ["_medic", "_patient", "_bodyPart", "_classname"];
-atient, _bodyPart, _classname], _patient] call CBA_fnc_targetEvent;
+	[QGVAR(ace_treatmentToPatient), [3, _medic, _patient, _bodyPart, _classname], _patient] call CBA_fnc_targetEvent;
 }] call CBA_fnc_addEventHandler;
 
 //event to transfer local events to patients
