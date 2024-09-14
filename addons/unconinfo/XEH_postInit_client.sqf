@@ -1,6 +1,7 @@
 #include "script_component.hpp"
 
-//Add uncon info Epriva["ace_unconscious", {
+//Add uncon info EH
+private _id = ["ace_unconscious", {
 	_this params ["_unit", "_state"];
 	if ( _state && _unit isEqualTo ace_player && GVAR(enableUnconInfo)) then {
 		GVAR(isBeingHelped) = false;
