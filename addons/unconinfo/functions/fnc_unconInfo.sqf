@@ -114,7 +114,7 @@ if (GVAR(isBeingHelpedTime) > cba_missionTime && !GVAR(enableShowDetailedTreatme
 _text = "<t size='"+ TEXTSIZE_NORMAL +"'>"+_text+"</t>";
 
 private _treatmentList = GVAR(treatments);
-if (_treatmentList isNotEqualTo []) then {
+if (_treatmentList isNotEqualTo [] && GVAR(enableShowDetailedTreatment)) then {
 	_text = _text + "<br/>" + "<t size='"+ TEXTSIZE_NORMAL +"'>" + "Treatments:" + "</t>";
 	{
 		_x params [ "_treatmenText", "_time"];
