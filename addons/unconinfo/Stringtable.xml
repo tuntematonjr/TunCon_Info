@@ -132,6 +132,14 @@
                 <Original>Enable showing detailed list of all treatments made to you</Original>
                 <English>Enable showing detailed list of all treatments made to you</English>
             </Key>
+            <Key ID="STR_TunCon_CBA_enableMoan">
+                <English>Enable unconscious moaning</English>
+                <Original>Enable unconscious moaning</Original>
+            </Key>
+            <Key ID="STR_TunCon_CBA_enableMoanTooltip">
+                <English>Allow uncon players to make moaning sounds</English>
+                <Original>Allow uncon players to make moaning sounds</Original>
+            </Key>
         </Container>
         <Container name="cba">
             <Key ID="STR_TunCon_CBA_enableUnconInfo">
