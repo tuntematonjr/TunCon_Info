@@ -1,7 +1,6 @@
 #include "script_component.hpp"
 
-//Add uncon info EH
-["ace_unconscious", {
+//Add uncon info Epriva["ace_unconscious", {
 	_this params ["_unit", "_state"];
 	if ( _state && _unit isEqualTo ace_player && GVAR(enableUnconInfo)) then {
 		GVAR(isBeingHelped) = false;
@@ -19,7 +18,9 @@
 				[_handle] call CBA_fnc_removePerFrameHandler; 
 			};
 			
-			[_player, round random 2] call FUNC(moan);
+			if (GVAR(enableMoan)) then {
+				[_player] call FUNC(moan);
+			};
 
 			//Dont run at curator screen
 			if (isNull curatorCamera) then {
@@ -43,7 +44,7 @@
 
 ["ace_treatmentFailed", {
 	params ["_medic", "_patient", "_bodyPart", "_classname"];
-	[QGVAR(ace_treatmentToPatient), [3, _medic, _patient, _bodyPart, _classname], _patient] call CBA_fnc_targetEvent;
+atient, _bodyPart, _classname], _patient] call CBA_fnc_targetEvent;
 }] call CBA_fnc_addEventHandler;
 
 //event to transfer local events to patients
