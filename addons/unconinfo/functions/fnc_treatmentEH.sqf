@@ -14,7 +14,7 @@
  */
 #include "script_component.hpp"
 
-params ["_event", "_medic", "_patient", "_bodyPart", "_classname"];
+params [["_event", "", [""]], ["_medic", objNull, [objNull]], ["_patient", objNull, [objNull]], ["_bodyPart", "", [""]], ["_classname", "", [""]]];
 private _player = ace_player;
 if (_medic isEqualTo _patient || _player isNotEqualTo _patient) exitWith {};
 

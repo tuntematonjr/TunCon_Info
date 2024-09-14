@@ -17,6 +17,17 @@ PREP_RECOMPILE_END;
 ] call CBA_Settings_fnc_init;
 
 [
+    QGVAR(enableMoan),
+    "CHECKBOX",
+    [localize "STR_TunCon_CBA_enableMoan", localize "STR_TunCon_CBA_enableMoanTooltip"],
+    ["Tun Utilities - Uncon Info", "Uncon Info"],
+    true,
+    1,
+    {},
+    true
+] call CBA_Settings_fnc_init;
+
+[
     QGVAR(enableShowEpinephrine),
     "CHECKBOX",
     [localize "STR_TunCon_CBA_enableShowEpinephrine", localize "STR_TunCon_CBA_enableShowEpinephrineTooltip"],
@@ -75,6 +86,28 @@ PREP_RECOMPILE_END;
     QGVAR(enableShowIfTreated),
     "CHECKBOX",
     [localize "STR_TunCon_CBA_enableShowIfTreated", localize "STR_TunCon_CBA_enableShowIfTreatedTooltip"],
+    ["Tun Utilities - Uncon Info", "Uncon Info"],
+    true,
+    1,
+    {},
+    true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(enableShowDetailedTreatment),
+    "CHECKBOX",
+    [localize "STR_TunCon_CBA_enableShowDetailedTreatment", localize "STR_TunCon_CBA_enableShowDetailedTreatmentTooltip"],
+    ["Tun Utilities - Uncon Info", "Uncon Info"],
+    true,
+    1,
+    {},
+    true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(enableShowIfTreatedConcious),
+    "CHECKBOX",
+    [localize "STR_TunCon_CBA_enableShowIfTreatedConcious", localize "STR_TunCon_CBA_enableShowIfTreatedConciousTooltip"],
     ["Tun Utilities - Uncon Info", "Uncon Info"],
     true,
     1,
