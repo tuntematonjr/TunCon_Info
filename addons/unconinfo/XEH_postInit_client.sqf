@@ -32,17 +32,17 @@ private _id = ["ace_unconscious", {
 
 //local events for medic
 ["ace_treatmentStarted", {
-	params ["_medic", "_patient", "_bodyPart", "_classname", "_itemUser", "_usedItem", "_createLitter"];
+	params ["_medic", "_patient", "_bodyPart", "_classname"];
 	[QGVAR(ace_treatmentToPatient), [1, _medic, _patient, _bodyPart, _classname], _patient] call CBA_fnc_targetEvent;
 }] call CBA_fnc_addEventHandler;
 
 ["ace_treatmentSucceded", {
-	params ["_medic", "_patient", "_bodyPart", "_classname", "_itemUser", "_usedItem", "_createLitter"];
+	params ["_medic", "_patient", "_bodyPart", "_classname"];
 	[QGVAR(ace_treatmentToPatient), [2, _medic, _patient, _bodyPart, _classname], _patient] call CBA_fnc_targetEvent;
 }] call CBA_fnc_addEventHandler;
 
 ["ace_treatmentFailed", {
-	params ["_medic", "_patient", "_bodyPart", "_classname", "_itemUser", "_usedItem", "_createLitter"];
+	params ["_medic", "_patient", "_bodyPart", "_classname"];
 	[QGVAR(ace_treatmentToPatient), [3, _medic, _patient, _bodyPart, _classname], _patient] call CBA_fnc_targetEvent;
 }] call CBA_fnc_addEventHandler;
 
