@@ -9,7 +9,7 @@ class CfgPatches {
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {"cba_xeh","cba_settings", "ace_main"};
         author = "Tuntematon";
-        authorUrl = "https://github.com/tuntematonjr/TunCon_Info";
+        authorUrl = GITHUBLINK;
         VERSION_CONFIG;
     };
 };
@@ -26,7 +26,7 @@ class CfgMods {
         hideName        = "false";              // Hide the extension name in main menu and extension menu
         hidePicture     = "false";              // Hide the extension picture in the extension menu
 
-        action          = "https://github.com/tuntematonjr/TunCon_Info"; // Website URL, that can accessed from the expansions menu 
+        action          = GITHUBLINK; // Website URL, that can accessed from the expansions menu 
         actionName      = "Github";              // label of button/tooltip in extension menu
         description     = "It's unclear where this will show"; // Probably in context with action
 
