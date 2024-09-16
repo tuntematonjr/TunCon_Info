@@ -3,7 +3,7 @@
 //Add uncon info EH
 ["ace_unconscious", {
 	_this params ["_unit", "_state"];
-	if ( _state && _unit isEqualTo ace_player && GVAR(enableUnconInfo)) then {
+	if ( _state && _unit isEqualTo player && GVAR(enableUnconInfo)) then {
 		[{
 			GVAR(isBeingHelped) = false;
 			GVAR(treatments) = [];
@@ -25,7 +25,7 @@
 				};
 
 				//Dont run at curator screen
-				if (isNull curatorCamera) then {
+				if (isNull curatorCamera && _player isEqualTo ace_player) then {
 					[] call FUNC(unconInfo);
 				};
 				
