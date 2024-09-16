@@ -14,8 +14,8 @@
  */
 #include "script_component.hpp"
 
-params [["_event", "", [""]], ["_medic", objNull, [objNull]], ["_patient", objNull, [objNull]], ["_bodyPart", "", [""]], ["_classname", "", [""]]];
-private _player = ace_player;
+params [["_event", 0, [1]], ["_medic", objNull, [objNull]], ["_patient", objNull, [objNull]], ["_bodyPart", "", [""]], ["_classname", "", [""]]];
+private _player = player;
 if (_medic isEqualTo _patient || _player isNotEqualTo _patient) exitWith {};
 
 private _config = configFile >> "ACE_Medical_Treatment_Actions" >> _classname;
