@@ -227,8 +227,8 @@
                 <Japanese>更新間隔</Japanese>
             </Key>
             <Key ID="STR_TunCon_CBA_updateIntervalTooltip">
-                <Original>Time between text updates while unconscious (seconds)</Original>
-                <English>Time between text updates while unconscious (seconds)</English>
+                <Original>Time between text updates while unconscious</Original>
+                <English>Time between text updates while unconscious</English>
                 <Japanese>表示テキストの更新間隔。(秒)</Japanese>
             </Key>
             <Key ID="STR_TunCon_CBA_enableShowEpinephrine">
