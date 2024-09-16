@@ -114,7 +114,7 @@ if (GVAR(isBeingHelpedTime) > _cbaTime && !GVAR(enableShowDetailedTreatment)) th
 _text = "<t size='"+ TEXTSIZE_NORMAL +"'>"+_text+"</t>";
 
 private _treatmentList = GVAR(treatments);
-if (_treatmentList isNotEqualTo [] && GVAR(enableShowDetailedTreatment)) then {
+if (GVAR(enableShowDetailedTreatment) && {_treatmentList isNotEqualTo []} && {((_treatmentList select -1) select 1) + GVAR(detailedTreatmentDelay) <= _cbaTime}) then {
 	_text = _text + "<br/>" + "<t size='"+ TEXTSIZE_NORMAL +"'>" + "Treatments:" + "</t>";
 	{
 		_x params [ "_treatmenText", "_time"];
