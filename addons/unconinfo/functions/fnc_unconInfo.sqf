@@ -106,8 +106,8 @@ if (GVAR(allowNearestUnit)) then {
 	};
 };
 
-
-if (GVAR(isBeingHelpedTime) > cba_missionTime && !GVAR(enableShowDetailedTreatment)) then {
+private _cbaTime = cba_missionTime;
+if (GVAR(isBeingHelpedTime) > _cbaTime && !GVAR(enableShowDetailedTreatment)) then {
 	_text = _text + "<br/>" + localize "STR_TunCon_isBeingHelpedText";
 };
 
@@ -118,8 +118,9 @@ if (_treatmentList isNotEqualTo [] && GVAR(enableShowDetailedTreatment)) then {
 	_text = _text + "<br/>" + "<t size='"+ TEXTSIZE_NORMAL +"'>" + "Treatments:" + "</t>";
 	{
 		_x params [ "_treatmenText", "_time"];
-		
-		_text = _text + "<br/>" + "<t size='"+ TEXTSIZE_SMALL+"'>" + format["%1 - %2s",_treatmenText, round(cba_missiontime - _time)] + "</t>";
+		if (_time + GVAR(detailedTreatmentDelay) <= _cbaTime) then {
+			_text = _text + "<br/>" + "<t size='"+ TEXTSIZE_SMALL+"'>" + format["%1 - %2s",_treatmenText, round(_cbaTime - _time)] + "</t>";
+		};
 	} forEachReversed _treatmentList;
 };
 

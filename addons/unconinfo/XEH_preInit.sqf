@@ -178,4 +178,34 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
+[
+    QGVAR(detailedTreatmentDelay), 
+    "TIME", 
+    [localize "STR_TunCon_CBA_detailedTreatmentDelay", localize "STR_TunCon_CBA_detailedTreatmentDelayTooltip"], 
+    ["Tun Utilities - Uncon Info", "Uncon Info"],
+    [0, 60, 0, 0],
+    1,
+    { 
+        params ["_value"];
+        _value = round _value;
+        GVAR(detailedTreatmentDelay) = _value; 
+    },
+    true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(delayForUnconInfoTexts), 
+    "TIME", 
+    [localize "STR_TunCon_CBA_delayForUnconInfoTexts", localize "STR_TunCon_CBA_delayForUnconInfoTextsTooltip"], 
+    ["Tun Utilities - Uncon Info", "Uncon Info"],
+    [0, 60, 5, 0],
+    1,
+    { 
+        params ["_value"];
+        _value = round _value;
+        GVAR(delayForUnconInfoTexts) = _value; 
+    },
+    true
+] call CBA_Settings_fnc_init;
+
 ADDON = true;

@@ -140,6 +140,22 @@
                 <English>Allow uncon players to make moaning sounds</English>
                 <Original>Allow uncon players to make moaning sounds</Original>
             </Key>
+            <Key ID="STR_TunCon_CBA_detailedTreatmentDelay">
+                <English>Detailed treatment delay</English>
+                <Original>Detailed treatment delay</Original>
+            </Key>
+            <Key ID="STR_TunCon_CBA_detailedTreatmentDelayTooltip">
+                <English>Delay before treatment appears in the treatment list while unconscious</English>
+                <Original>Delay before treatment appears in the treatment list while unconscious</Original>
+            </Key>
+            <Key ID="STR_TunCon_CBA_delayForUnconInfoTexts">
+                <English>Delay before information is shown</English>
+                <Original>Delay before information is shown</Original>
+            </Key>
+            <Key ID="STR_TunCon_CBA_delayForUnconInfoTextsTooltip">
+                <English>Delay before information is displayed after a player becomes unconscious</English>
+                <Original>Delay before information is displayed after a player becomes unconscious</Original>
+            </Key>
         </Container>
         <Container name="cba">
             <Key ID="STR_TunCon_CBA_enableUnconInfo">
