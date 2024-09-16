@@ -3,30 +3,34 @@
 //Add uncon info EH
 ["ace_unconscious", {
 	_this params ["_unit", "_state"];
-	if ( _state && _unit isEqualTo ace_player && GVAR(enableUnconInfo)) then {
-		GVAR(isBeingHelped) = false;
-		GVAR(treatments) = [];
+	if ( _state && _unit isEqualTo player && GVAR(enableUnconInfo)) then {
+		[{
+			GVAR(isBeingHelped) = false;
+			GVAR(treatments) = [];
 
-		private _handle = [{
-			private _player = ace_player;
-			if (GVAR(isBeingHelped)) then {
-				GVAR(isBeingHelpedTime) = cba_missionTime + 20;
-				GVAR(isBeingHelped) = false;
-			};
+			[{
+				private _player = player;
+				if (GVAR(isBeingHelped)) then {
+					GVAR(isBeingHelpedTime) = cba_missionTime + 20;
+					GVAR(isBeingHelped) = false;
+				};
 
-			if (!(_player getVariable ["ACE_isUnconscious", false]) || {!alive _player}) exitWith {
-				cutText ["", "PLAIN NOFADE", -1, false, true];
-				[_handle] call CBA_fnc_removePerFrameHandler; 
-			};
-			
-			[_player, round random 2] call FUNC(moan);
+				if (!(_player getVariable ["ACE_isUnconscious", false]) || {!alive _player}) exitWith {
+					cutText ["", "PLAIN NOFADE", -1, false, true];
+					[_handle] call CBA_fnc_removePerFrameHandler; 
+				};
+				
+				if (GVAR(enableMoan)) then {
+					[_player] call FUNC(moan);
+				};
 
-			//Dont run at curator screen
-			if (isNull curatorCamera) then {
-				[] call FUNC(unconInfo);
-			};
-			
-		}, GVAR(updateInterval)] call CBA_fnc_addPerFrameHandler;
+				//Dont run at curator screen
+				if (isNull curatorCamera && _player isEqualTo ace_player) then {
+					[] call FUNC(unconInfo);
+				};
+				
+			}, GVAR(updateInterval)] call CBA_fnc_addPerFrameHandler;
+		}, [], GVAR(delayForUnconInfoTexts)] call CBA_fnc_waitAndExecute;
 	};
 }] call CBA_fnc_addEventHandler;
 

@@ -14,8 +14,8 @@
  */
 #include "script_component.hpp"
 
-params [["_event", "", [""]], ["_medic", objNull, [objNull]], ["_patient", objNull, [objNull]], ["_bodyPart", "", [""]], ["_classname", "", [""]]];
-private _player = ace_player;
+params [["_event", 0, [1]], ["_medic", objNull, [objNull]], ["_patient", objNull, [objNull]], ["_bodyPart", "", [""]], ["_classname", "", [""]]];
+private _player = player;
 if (_medic isEqualTo _patient || _player isNotEqualTo _patient) exitWith {};
 
 private _config = configFile >> "ACE_Medical_Treatment_Actions" >> _classname;
@@ -26,7 +26,7 @@ _medic = name _medic;
 private _isUncon = lifeState _player == "INCAPACITATED" && GVAR(enableShowIfTreated);
 
 private _text = switch (_event) do {
-	case 1: { 
+	case 1: {
 		format[localize "STR_TunCon_EH_startedTreatment", _medic, _displayNameProgress, _bodyPart]
 	};
 
@@ -35,12 +35,12 @@ private _text = switch (_event) do {
 		format[_textToFormat, _medic, _displayName, _bodyPart]
 	};
 
-	case 3: { 
+	case 3: {
 		private _textToFormat = localize(["STR_TunCon_EH_failedTreatment", "STR_TunCon_EH_failedTreatmentStructured"] select _isUncon);
 		format[_textToFormat, _medic, _displayName, _bodyPart]
 	};
 
-	default {""};
+	default {"Failed to get treatment"};
 };
 
 if _isUncon then {
