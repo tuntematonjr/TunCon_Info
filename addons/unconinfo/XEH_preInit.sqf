@@ -14,7 +14,7 @@ PREP_RECOMPILE_END;
     1,
     {},
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(enableMoan),
@@ -25,7 +25,7 @@ PREP_RECOMPILE_END;
     1,
     {},
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(enableShowEpinephrine),
@@ -36,7 +36,7 @@ PREP_RECOMPILE_END;
     1,
     {},
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(enableShowBleeding),
@@ -47,7 +47,7 @@ PREP_RECOMPILE_END;
     1,
     {},
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(enableShowCardiacArrest),
@@ -58,7 +58,7 @@ PREP_RECOMPILE_END;
     1,
     {},
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(enableShowHeartRate),
@@ -69,7 +69,7 @@ PREP_RECOMPILE_END;
     1,
     {},
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(enableShowStableVitals),
@@ -80,7 +80,7 @@ PREP_RECOMPILE_END;
     1,
     {},
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(enableShowIfTreated),
@@ -91,7 +91,7 @@ PREP_RECOMPILE_END;
     1,
     {},
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(enableShowDetailedTreatment),
@@ -102,7 +102,7 @@ PREP_RECOMPILE_END;
     1,
     {},
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(enableShowIfTreatedConcious),
@@ -113,7 +113,7 @@ PREP_RECOMPILE_END;
     1,
     {},
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(allowNearestUnit),
@@ -124,7 +124,7 @@ PREP_RECOMPILE_END;
     1,
     {},
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(allowNearestUnitDistanceShown),
@@ -135,7 +135,7 @@ PREP_RECOMPILE_END;
     1,
     {},
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(unconinfoNearestUnitDistance), 
@@ -150,7 +150,7 @@ PREP_RECOMPILE_END;
         GVAR(unconinfoNearestUnitDistance) = _value; 
     },
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(noFriendliesNearbyText), 
@@ -161,7 +161,7 @@ PREP_RECOMPILE_END;
     1,
     {},
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(updateInterval), 
@@ -176,7 +176,7 @@ PREP_RECOMPILE_END;
         GVAR(updateInterval) = _value; 
     },
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(detailedTreatmentDelay), 
@@ -191,7 +191,7 @@ PREP_RECOMPILE_END;
         GVAR(detailedTreatmentDelay) = _value; 
     },
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(delayForUnconInfoTexts), 
@@ -206,6 +206,6 @@ PREP_RECOMPILE_END;
         GVAR(delayForUnconInfoTexts) = _value; 
     },
     true
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 ADDON = true;

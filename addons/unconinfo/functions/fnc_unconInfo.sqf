@@ -115,7 +115,7 @@ _text = "<t size='"+ TEXTSIZE_NORMAL +"'>"+_text+"</t>";
 
 private _treatmentList = GVAR(treatments);
 if (GVAR(enableShowDetailedTreatment) && {_treatmentList isNotEqualTo []} && {((_treatmentList select -1) select 1) + GVAR(detailedTreatmentDelay) <= _cbaTime}) then {
-	_text = _text + "<br/>" + "<t size='"+ TEXTSIZE_NORMAL +"'>" + "Treatments:" + "</t>";
+	_text = _text + "<br/>" + "<t size='"+ TEXTSIZE_NORMAL +"'>" + localize"STR_TunCon_treatments" + "</t>";
 	{
 		_x params [ "_treatmenText", "_time"];
 		if (_time + GVAR(detailedTreatmentDelay) <= _cbaTime) then {
