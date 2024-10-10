@@ -10,3 +10,6 @@
 
 #define GITHUBLINK             "https://github.com/tuntematonjr/TunCon_Info"
 #define MAIN_ADDON_STR         QUOTE(MAIN_ADDON)
+
+//This forces debug on everything.
+//#define DEBUG_ENABLED_MAIN
