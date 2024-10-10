@@ -16,7 +16,7 @@
 				};
 
 				if (!(_player getVariable ["ACE_isUnconscious", false]) || {!alive _player}) exitWith {
-					cutText ["", "PLAIN NOFADE", -1, false, true];
+					QGVAR(cutTextLayer) cutText ["", "PLAIN NOFADE", -1, false, true];
 					[_handle] call CBA_fnc_removePerFrameHandler; 
 				};
 				

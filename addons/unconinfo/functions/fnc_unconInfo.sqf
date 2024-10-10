@@ -165,4 +165,4 @@ if (_text isEqualTo "<t size='"+ TEXTSIZE_NORMAL +"'>"+(localize "STR_TunCon_fir
 	_text = "";
 };
 
-cutText ["<t valign='top' align='center'>"+_text+"</t>", "PLAIN NOFADE" , -1, false, true];
+QGVAR(cutTextLayer) cutText ["<t valign='top' align='center'>"+_text+"</t>", "PLAIN NOFADE" , -1, false, true];

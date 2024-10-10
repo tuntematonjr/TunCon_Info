@@ -15,5 +15,5 @@
 #include "script_component.hpp"
 
 if (GVAR(enableUnconInfo) && player getVariable ["ACE_isUnconscious", false]) then {
-	cutText ["", "PLAIN NOFADE", -1, false, true];
+	QGVAR(cutTextLayer) cutText ["", "PLAIN NOFADE", -1, false, true];
 };
