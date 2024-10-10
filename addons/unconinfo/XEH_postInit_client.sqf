@@ -16,12 +16,12 @@
 				};
 
 				if (!(_player getVariable ["ACE_isUnconscious", false]) || {!alive _player}) exitWith {
-					cutText ["", "PLAIN NOFADE", -1, false, true];
+					QGVAR(cutTextLayer) cutText ["", "PLAIN NOFADE", -1, false, true];
 					[_handle] call CBA_fnc_removePerFrameHandler; 
 				};
 				
 				if (GVAR(enableMoan)) then {
-					[_player] call FUNC(moan);
+					[_player, "moan", round random 2, nil, [15,25,40], true] call ace_medical_feedback_fnc_playInjuredSound;
 				};
 
 				//Dont run at curator screen

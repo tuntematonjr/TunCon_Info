@@ -6,6 +6,7 @@
 
 	_entity addEventHandler ["CuratorObjectRegistered", {
 		params ["_curator"];
+		if !(GVAR(enableUnconInfo)) exitWith { };
 		private _player = getAssignedCuratorUnit _curator;
 		[] remoteExecCall [QFUNC(hideMessage), _player, false];
 	}];
