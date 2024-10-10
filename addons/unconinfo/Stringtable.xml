@@ -50,41 +50,29 @@
                 <Spanish>No hay aliados cerca</Spanish>
                 <Japanese>友軍は付近に居ないようです</Japanese>
             </Key>
-            <Key ID="STR_TunCon_closestUnitWithDistance">
-                <Original>%1Closest unit is %2 and %2 is medic (%3m)</Original>
-                <English>%1Closest unit is %2 and %2 is medic (%3m)</English>
-                <Spanish>%1El aliado mas cercano es %2 y es medico (%3m)</Spanish>
-                <Japanese>%1最も近い友軍は %2 で衛生兵です (%3m)</Japanese>
+            <Key ID="STR_TunCon_closestUnitIsMedic">
+                <Original>%1 is medic and the nearest soldier</Original>
+                <English>%1 is medic and the nearest soldier</English>
+                <Spanish>El aliado mas cercano es %1 y es medico</Spanish>
+                <Japanese>最も近い友軍は %1 で衛生兵です</Japanese>
             </Key>
-            <Key ID="STR_TunCon_closestUnitWithOutDistance">
-                <Original>%1Closest unit is %2 and %2 is medic</Original>
-                <English>%1Closest unit is %2 and %2 is medic</English>
-                <Spanish>%1El aliado mas cercano es %2 y tambien es medico</Spanish>
-                <Japanese>%1最も近い友軍は %2 で衛生兵です</Japanese>
+            <Key ID="STR_TunCon_closestUnit">
+                <Original>The closest friendly soldier is %1</Original>
+                <English>The closest friendly soldier is %1</English>
+                <Spanish>El aliado mas cercano es %1</Spanish>
+                <Japanese>最も近い友軍は %1 です</Japanese>
             </Key>
-            <Key ID="STR_TunCon_closestUnitAndMedicWithDistance">
-                <Original>%1Closest unit is %2 (%3m)&lt;br/&gt;Closest medic is %4 (%5m)</Original>
-                <English>%1Closest unit is %2 (%3m)&lt;br/&gt;Closest medic is %4 (%5m)</English>
-                <Spanish>%1El aliado mas cercano es %2 (%3m)&lt;br/&gt;El medico mas cercano es %4 (%5m)</Spanish>
-                <Japanese>%1最も近い友軍は %2 です (%3m)&lt;br/&gt;最も近い衛生兵は %4 です (%5m)</Japanese>
+            <Key ID="STR_TunCon_closestMedic">
+                <Original>The nearest medic is %1</Original>
+                <English>The nearest medic is %1</English>
+                <Spanish>El medico mas cercano es %1</Spanish>
+                <Japanese>最も近い衛生兵は %1 です</Japanese>
             </Key>
-            <Key ID="STR_TunCon_closestUnitAndMedicWithOutDistance">
-                <Original>%1Closest unit is %2&lt;br/&gt;Closest medic is %3</Original>
-                <English>%1Closest unit is %2&lt;br/&gt;Closest medic is %3</English>
-                <Spanish>%1El aliado mas cercano es %2&lt;br/&gt;El medico mas cercano es %3</Spanish>
-                <Japanese>%1最も近い友軍は %2 です&lt;br/&gt;最も近い衛生兵は %3 です</Japanese>
-            </Key>
-            <Key ID="STR_TunCon_closestUnitNoMedicWithDistance">
-                <Original>%1Closest unit is %2 (%3m), but no medics nearby</Original>
-                <English>%1Closest unit is %2 (%3m), but no medics nearby</English>
-                <Spanish>%1El aliado mas cercano es %2 (%3m), pero no hay ningun medico cerca</Spanish>
-                <Japanese>%1最も近い友軍は %2 です (%3m), しかし付近に衛生兵はいません</Japanese>
-            </Key>
-            <Key ID="STR_TunCon_closestUnitNoMedicWithOutDistance">
-                <Original>%1Closest unit is %2, but no medics nearby</Original>
-                <English>%1Closest unit is %2, but no medics nearby</English>
-                <Spanish>%1El aliado mas cercano es %2, pero no hay ningun medico cerca</Spanish>
-                <Japanese>%1最も近い友軍は %2 です, しかし付近に衛生兵はいません</Japanese>
+            <Key ID="STR_TunCon_noMedicsNear">
+                <Original>but no medics nearby</Original>
+                <English>but no medics nearby</English>
+                <Spanish>pero no hay ningun medico cerca</Spanish>
+                <Japanese>しかし付近に衛生兵はいません</Japanese>
             </Key>
             <Key ID="STR_TunCon_isBeingHelpedText">
                 <Original>You are being helped!</Original>
@@ -156,8 +144,6 @@
                 <English>Delay before information is displayed after a player becomes unconscious</English>
                 <Original>Delay before information is displayed after a player becomes unconscious</Original>
             </Key>
-        </Container>
-        <Container name="cba">
             <Key ID="STR_TunCon_CBA_enableUnconInfo">
                 <Original>Enable uncon info</Original>
                 <English>Enable uncon info</English>
@@ -270,6 +256,30 @@
             <Key ID="STR_TunCon_CBA_enableShowStableVitalsTooltip">
                 <Original>Enable showing if player has stable or unstable vitals</Original>
                 <English>Enable showing if player has stable or unstable vitals</English>
+            </Key>
+            <Key ID="STR_TunCon_isInVehicle">
+                <English> inside of a %1</English>
+                <Original> inside of a %1</Original>
+            </Key>
+            <Key ID="STR_TunCon_CBA_enableShowIsInVehicle">
+                <English>Enable showing player is in vehicle</English>
+                <Original>Enable showing player is in vehicle</Original>
+            </Key>
+            <Key ID="STR_TunCon_CBA_enableShowIsInVehicleTooltip">
+                <English>Enable displaying whether the player is inside vehicle</English>
+                <Original>Enable displaying whether the player is inside vehicle</Original>
+            </Key>
+            <Key ID="STR_TunCon_insideVehicle">
+                <English>You are inside %1</English>
+                <Original>You are inside %1</Original>
+            </Key>
+            <Key ID="STR_TunCon_CBA_enableShowIsInVehicleOthers">
+                <English>Enable showing others are in vehicle</English>
+                <Original>Enable showing others are in vehicle</Original>
+            </Key>
+            <Key ID="STR_TunCon_CBA_enableShowIsInVehicleOthersTooltip">
+                <English>Enable displaying whether the friendly units are inside vehicle</English>
+                <Original>Enable displaying whether the friendly units are inside vehicle</Original>
             </Key>
         </Container>
     </Package>
