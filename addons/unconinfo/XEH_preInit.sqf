@@ -138,6 +138,28 @@ PREP_RECOMPILE_END;
 ] call CBA_fnc_addSetting;
 
 [
+	QGVAR(enableShowIsInVehicle),
+	"CHECKBOX",
+	[localize "STR_TunCon_CBA_enableShowIsInVehicle", localize "STR_TunCon_CBA_enableShowIsInVehicleTooltip"],
+	["Tun Utilities - Uncon Info", "Uncon Info"],
+	true,
+	1,
+	{},
+	false
+] call CBA_fnc_addSetting;
+
+[
+	QGVAR(enableShowIsOthersInVehicle),
+	"CHECKBOX",
+	[localize "STR_TunCon_CBA_enableShowIsInVehicleOthers", localize "STR_TunCon_CBA_enableShowIsInVehicleOthersTooltip"],
+	["Tun Utilities - Uncon Info", "Uncon Info"],
+	true,
+	1,
+	{},
+	false
+] call CBA_fnc_addSetting;
+
+[
 	QGVAR(unconinfoNearestUnitDistance), 
 	"SLIDER", 
 	[localize "STR_TunCon_CBA_distanceToLookFriendlies", localize "STR_TunCon_CBA_distanceToLookFriendliesTooltip"], 
@@ -206,28 +228,6 @@ PREP_RECOMPILE_END;
         GVAR(delayForUnconInfoTexts) = _value; 
     },
     false
-] call CBA_fnc_addSetting;
-
-[
-	QGVAR(enableShowIsInVehicle),
-	"CHECKBOX",
-	[localize "STR_TunCon_CBA_enableShowIsInVehicle", localize "STR_TunCon_CBA_enableShowIsInVehicleTooltip"],
-	["Tun Utilities - Uncon Info", "Uncon Info"],
-	true,
-	1,
-	{},
-	false
-] call CBA_fnc_addSetting;
-
-[
-	QGVAR(enableShowIsOthersInVehicle),
-	"CHECKBOX",
-	[localize "STR_TunCon_CBA_enableShowIsInVehicleOthers", localize "STR_TunCon_CBA_enableShowIsInVehicleOthersTooltip"],
-	["Tun Utilities - Uncon Info", "Uncon Info"],
-	true,
-	1,
-	{},
-	false
 ] call CBA_fnc_addSetting;
 
 ADDON = true;
