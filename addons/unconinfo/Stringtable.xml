@@ -2,180 +2,21 @@
 <Project name="unconinfo">
     <Package name="unconinfo">
         <Container name="unconinfo">
-            <Key ID="STR_TunCon_firstLine">
-                <Original>You sense that</Original>
-                <English>You sense that</English>
-                <Spanish>Sientes que</Spanish>
-                <Japanese>あなたが感じていることは次の通り</Japanese>
-            </Key>
-            <Key ID="STR_TunCon_isBleeding">
-                <Original>You are bleeding</Original>
-                <English>You are bleeding</English>
-                <Spanish>Estas sangrando</Spanish>
-                <Japanese>あなたは出血している</Japanese>
-            </Key>
-            <Key ID="STR_TunCon_hasPulse">
-                <Original>You still have pulse</Original>
-                <English>You still have pulse</English>
-                <Spanish>Todavia tienes pulsa</Spanish>
-                <Japanese>あなたはまだ脈拍がある</Japanese>
-            </Key>
-            <Key ID="STR_TunCon_inCardiacArrest">
-                <Original>You are in cardiac arrest</Original>
-                <English>You are in cardiac arrest</English>
-                <Spanish>Estas en parada cardiaca</Spanish>
-                <Japanese>あなたは心停止している</Japanese>
-            </Key>
-            <Key ID="STR_TunCon_hasStableVitals">
-                <Original>You have stable vitals (you can wake up)</Original>
-                <English>You have stable vitals (you can wake up)</English>
-                <Spanish>Tienes las vitales estables (Puedes despertar)</Spanish>
-                <Japanese>あなたのバイタルは安定している (目覚める可能性がある)</Japanese>
-            </Key>
-            <Key ID="STR_TunCon_notStableVitals">
-                <Original>You don't have stable vitals (This prevents you from waking up)</Original>
-                <English>You don't have stable vitals (This prevents you from waking up)</English>
-                <Spanish>No tienes las vitales estables (No puedes despertar)</Spanish>
-                <Japanese>あなたのバイタルは安定していない (目覚めることは出来ない)</Japanese>
-            </Key>
-            <Key ID="STR_TunCon_hasepinEphrine">
-                <Original>You have epinephrine in your system (Significantly higher chance of waking up)</Original>
-                <English>You have epinephrine in your system (Significantly higher chance of waking up)</English>
-                <Spanish>Tienes epinefrina en tu sistema (tus probabilidades de despertar aumentan)</Spanish>
-                <Japanese>あなたはアドレナリンを打たれている (目覚める確率が上がっている)</Japanese>
-            </Key>
-            <Key ID="STR_TunCon_noFriends">
-                <Original>There are no friendlies nearby</Original>
-                <English>There are no friendlies nearby</English>
-                <Spanish>No hay aliados cerca</Spanish>
-                <Japanese>友軍は付近に居ないようです</Japanese>
-            </Key>
-            <Key ID="STR_TunCon_closestUnitIsMedic">
-                <Original>%1 is medic and the nearest soldier</Original>
-                <English>%1 is medic and the nearest soldier</English>
-                <Spanish>El aliado mas cercano es %1 y es medico</Spanish>
-                <Japanese>最も近い友軍は %1 で衛生兵です</Japanese>
-            </Key>
-            <Key ID="STR_TunCon_closestUnit">
-                <Original>The closest friendly soldier is %1</Original>
-                <English>The closest friendly soldier is %1</English>
-                <Spanish>El aliado mas cercano es %1</Spanish>
-                <Japanese>最も近い友軍は %1 です</Japanese>
-            </Key>
-            <Key ID="STR_TunCon_closestMedic">
-                <Original>The nearest medic is %1</Original>
-                <English>The nearest medic is %1</English>
-                <Spanish>El medico mas cercano es %1</Spanish>
-                <Japanese>最も近い衛生兵は %1 です</Japanese>
-            </Key>
-            <Key ID="STR_TunCon_noMedicsNear">
-                <Original>but no medics nearby</Original>
-                <English>but no medics nearby</English>
-                <Spanish>pero no hay ningun medico cerca</Spanish>
-                <Japanese>しかし付近に衛生兵はいません</Japanese>
-            </Key>
-            <Key ID="STR_TunCon_isBeingHelpedText">
-                <Original>You are being helped!</Original>
-                <English>You are being helped!</English>
-                <Spanish>¡Te estan ayudando!</Spanish>
-                <Japanese>あなたは治療を受けている!</Japanese>
-            </Key>
-            <Key ID="STR_TunCon_CBA_enableShowIfTreatedConcious">
-                <Original>Enable showing if player is treated concious</Original>
-                <English>Enable showing if player is treated concious</English>
-            </Key>
-            <Key ID="STR_TunCon_CBA_enableShowIfTreatedConciousTooltip">
-                <Original>Enables showing text that player is being treated while concious</Original>
-                <English>Enables showing text that player is being treated while concious</English>
-            </Key>
-            <Key ID="STR_TunCon_EH_startedTreatment">
-                <Original>%1 is %2 on your %3</Original>
-                <English>%1 is %2 on your %3</English>
-            </Key>
-            <Key ID="STR_TunCon_EH_succededTreatment">
-                <Original>%1 completed treatment %2 on %3</Original>
-                <English>%1 completed treatment %2 on %3</English>
-            </Key>
-            <Key ID="STR_TunCon_EH_failedTreatment">
-                <Original>%1 failed treatment %2 on %3</Original>
-                <English>%1 failed treatment %2 on %3</English>
-            </Key>
-            <Key ID="STR_TunCon_treatments">
-                <Original>Treatments:</Original>
-                <English>Treatments:</English>
-            </Key>
-            <Key ID="STR_TunCon_EH_succededTreatmentStructured">
-                <Original>%1 &lt;t color='#008000'&gt;completed&lt;/t&gt; treatment %2 on %3</Original>
-                <English>%1 &lt;t color='#008000'&gt;completed&lt;/t&gt; treatment %2 on %3</English>
-            </Key>
-            <Key ID="STR_TunCon_EH_failedTreatmentStructured">
-                <Original>%1 &lt;t color='#CC0000'&gt;failed&lt;/t&gt; treatment %2 on %3</Original>
-                <English>%1 &lt;t color='#CC0000'&gt;failed&lt;/t&gt; treatment %2 on %3</English>
-            </Key>
-            <Key ID="STR_TunCon_CBA_enableShowDetailedTreatment">
-                <Original>Enable showing detailed list of treatments</Original>
-                <English>Enable showing detailed list of treatments</English>
-            </Key>
-            <Key ID="STR_TunCon_CBA_enableShowDetailedTreatmentTooltip">
-                <Original>Enable showing detailed list of all treatments made to you</Original>
-                <English>Enable showing detailed list of all treatments made to you</English>
-            </Key>
-            <Key ID="STR_TunCon_CBA_enableMoan">
-                <English>Enable unconscious moaning</English>
-                <Original>Enable unconscious moaning</Original>
-            </Key>
-            <Key ID="STR_TunCon_CBA_enableMoanTooltip">
-                <English>Allow uncon players to make moaning sounds</English>
-                <Original>Allow uncon players to make moaning sounds</Original>
-            </Key>
-            <Key ID="STR_TunCon_CBA_detailedTreatmentDelay">
-                <English>Detailed treatment delay</English>
-                <Original>Detailed treatment delay</Original>
-            </Key>
-            <Key ID="STR_TunCon_CBA_detailedTreatmentDelayTooltip">
-                <English>Delay before treatment appears in the treatment list while unconscious</English>
-                <Original>Delay before treatment appears in the treatment list while unconscious</Original>
-            </Key>
             <Key ID="STR_TunCon_CBA_delayForUnconInfoTexts">
-                <English>Delay before information is shown</English>
                 <Original>Delay before information is shown</Original>
+                <English>Delay before information is shown</English>
             </Key>
             <Key ID="STR_TunCon_CBA_delayForUnconInfoTextsTooltip">
-                <English>Delay before information is displayed after a player becomes unconscious</English>
                 <Original>Delay before information is displayed after a player becomes unconscious</Original>
+                <English>Delay before information is displayed after a player becomes unconscious</English>
             </Key>
-            <Key ID="STR_TunCon_CBA_enableUnconInfo">
-                <Original>Enable uncon info</Original>
-                <English>Enable uncon info</English>
-                <Spanish>Activar uncon info</Spanish>
-                <Japanese>アンコン インフォを有効化</Japanese>
+            <Key ID="STR_TunCon_CBA_detailedTreatmentDelay">
+                <Original>Detailed treatment delay</Original>
+                <English>Detailed treatment delay</English>
             </Key>
-            <Key ID="STR_TunCon_CBA_enableUnconInfoTooltip">
-                <Original>Enanbles uncon to know whats going around them. Own vitals and if friendlies nearby.</Original>
-                <English>Enanbles uncon to know whats going around them. Own vitals and if friendlies nearby.</English>
-                <Spanish>Permite que uncon sepa que pasa alrededor. Tus propias vitales y si hay aliados cerca</Spanish>
-                <Japanese>アンコン インフォを有効化すると気絶中に付近の友軍の有無や自分のバイタルを感じることができます。</Japanese>
-            </Key>
-            <Key ID="STR_TunCon_CBA_enableShowingNearestUnit">
-                <Original>Enable showing nearest unit</Original>
-                <English>Enable showing nearest unit</English>
-                <Spanish>Activar mostrar el aliado mas cercano</Spanish>
-                <Japanese>付近の友軍情報表示を有効化</Japanese>
-            </Key>
-            <Key ID="STR_TunCon_CBA_enableShowingNearestUnitTooltip">
-                <Original>Enables showing if there is nearby friendly units</Original>
-                <English>Enables showing if there is nearby friendly units</English>
-                <Japanese>付近の友軍情報表示を有効化すると近くに味方がいるときにその情報を表示します</Japanese>
-            </Key>
-            <Key ID="STR_TunCon_CBA_enableShowingDistance">
-                <Original>Enable showing nearest unit distance</Original>
-                <English>Enable showing nearest unit distance</English>
-                <Japanese>付近の友軍距離表示を有効化</Japanese>
-            </Key>
-            <Key ID="STR_TunCon_CBA_enableShowingDistanceTooltip">
-                <Original>Enable showing closest friendlies distance</Original>
-                <English>Enable showing closest friendlies distance</English>
-                <Japanese>付近の友軍距離表示を有効化すると近くにいる味方までの距離を表示します</Japanese>
+            <Key ID="STR_TunCon_CBA_detailedTreatmentDelayTooltip">
+                <Original>Delay before treatment appears in the treatment list while unconscious</Original>
+                <English>Delay before treatment appears in the treatment list while unconscious</English>
             </Key>
             <Key ID="STR_TunCon_CBA_distanceToLookFriendlies">
                 <Original>Distance for looking closest friendly</Original>
@@ -187,43 +28,13 @@
                 <English>Distance in meters to find nearest friendly and medic</English>
                 <Japanese>情報表示することができる友軍までの最も遠い距離範囲(メートル)</Japanese>
             </Key>
-            <Key ID="STR_TunCon_CBA_noFriends">
-                <Original>Text if no friendlies nearby and no vitals</Original>
-                <English>Text if no friendlies nearby and no vitals</English>
-                <Japanese>友軍不在でバイタル不安定時に表示するテキスト</Japanese>
+            <Key ID="STR_TunCon_CBA_enableMoan">
+                <Original>Enable unconscious moaning</Original>
+                <English>Enable unconscious moaning</English>
             </Key>
-            <Key ID="STR_TunCon_CBA_noFriendsTooltip">
-                <Original>Text what is shown when player has bad vitals and no friendlies nearby</Original>
-                <English>Text what is shown when player has bad vitals and no friendlies nearby</English>
-                <Japanese>プレイヤーの近辺に友軍が不在でかつバイタルが不安定(目覚める可能性が無い)時に表示するテキスト</Japanese>
-            </Key>
-            <Key ID="STR_TunCon_CBA_enableShowIfTreated">
-                <Original>Enable showing if player is treated</Original>
-                <English>Enable showing if player is treated</English>
-                <Japanese>プレイヤーが治療を受けたことを表示</Japanese>
-            </Key>
-            <Key ID="STR_TunCon_CBA_enableShowIfTreatedTooltip">
-                <Original>Enables showing text that player is being treated</Original>
-                <English>Enables showing text that player is being treated</English>
-                <Japanese>プレイヤーが治療を受けていることをテキスト表示できるようにします</Japanese>
-            </Key>
-            <Key ID="STR_TunCon_CBA_updateInterval">
-                <Original>Update interval</Original>
-                <English>Update interval</English>
-                <Japanese>更新間隔</Japanese>
-            </Key>
-            <Key ID="STR_TunCon_CBA_updateIntervalTooltip">
-                <Original>Time between text updates while unconscious</Original>
-                <English>Time between text updates while unconscious</English>
-                <Japanese>表示テキストの更新間隔。(秒)</Japanese>
-            </Key>
-            <Key ID="STR_TunCon_CBA_enableShowEpinephrine">
-                <Original>Enable showing Epinephrine</Original>
-                <English>Enable showing Epinephrine</English>
-            </Key>
-            <Key ID="STR_TunCon_CBA_enableShowEpinephrineTooltip">
-                <Original>Enable showing text if player has Epinephrine in his system</Original>
-                <English>Enable showing text if player has Epinephrine in his system</English>
+            <Key ID="STR_TunCon_CBA_enableMoanTooltip">
+                <Original>Allow uncon players to make moaning sounds</Original>
+                <English>Allow uncon players to make moaning sounds</English>
             </Key>
             <Key ID="STR_TunCon_CBA_enableShowBleeding">
                 <Original>Enable showing bleeding</Original>
@@ -241,6 +52,22 @@
                 <Original>Enable showing if player is in cardiac arrest</Original>
                 <English>Enable showing if player is in cardiac arrest</English>
             </Key>
+            <Key ID="STR_TunCon_CBA_enableShowDetailedTreatment">
+                <Original>Enable showing detailed list of treatments</Original>
+                <English>Enable showing detailed list of treatments</English>
+            </Key>
+            <Key ID="STR_TunCon_CBA_enableShowDetailedTreatmentTooltip">
+                <Original>Enable showing detailed list of all treatments made to you</Original>
+                <English>Enable showing detailed list of all treatments made to you</English>
+            </Key>
+            <Key ID="STR_TunCon_CBA_enableShowEpinephrine">
+                <Original>Enable showing Epinephrine</Original>
+                <English>Enable showing Epinephrine</English>
+            </Key>
+            <Key ID="STR_TunCon_CBA_enableShowEpinephrineTooltip">
+                <Original>Enable showing text if player has Epinephrine in his system</Original>
+                <English>Enable showing text if player has Epinephrine in his system</English>
+            </Key>
             <Key ID="STR_TunCon_CBA_enableShowHeartRate">
                 <Original>Enable showing heart rate</Original>
                 <English>Enable showing heart rate</English>
@@ -248,6 +75,40 @@
             <Key ID="STR_TunCon_CBA_enableShowHeartRateTooltip">
                 <Original>Enable showing heart rate for player</Original>
                 <English>Enable showing heart rate for player</English>
+            </Key>
+            <Key ID="STR_TunCon_CBA_enableShowIfTreated">
+                <Original>Enable showing if player is treated</Original>
+                <English>Enable showing if player is treated</English>
+                <Japanese>プレイヤーが治療を受けたことを表示</Japanese>
+            </Key>
+            <Key ID="STR_TunCon_CBA_enableShowIfTreatedConcious">
+                <Original>Enable showing if player is treated concious</Original>
+                <English>Enable showing if player is treated concious</English>
+            </Key>
+            <Key ID="STR_TunCon_CBA_enableShowIfTreatedConciousTooltip">
+                <Original>Enables showing text that player is being treated while concious</Original>
+                <English>Enables showing text that player is being treated while concious</English>
+            </Key>
+            <Key ID="STR_TunCon_CBA_enableShowIfTreatedTooltip">
+                <Original>Enables showing text that player is being treated</Original>
+                <English>Enables showing text that player is being treated</English>
+                <Japanese>プレイヤーが治療を受けていることをテキスト表示できるようにします</Japanese>
+            </Key>
+            <Key ID="STR_TunCon_CBA_enableShowIsInVehicle">
+                <Original>Enable showing player is in vehicle</Original>
+                <English>Enable showing player is in vehicle</English>
+            </Key>
+            <Key ID="STR_TunCon_CBA_enableShowIsInVehicleOthers">
+                <Original>Enable showing others are in vehicle</Original>
+                <English>Enable showing others are in vehicle</English>
+            </Key>
+            <Key ID="STR_TunCon_CBA_enableShowIsInVehicleOthersTooltip">
+                <Original>Enable displaying whether the friendly units are inside vehicle</Original>
+                <English>Enable displaying whether the friendly units are inside vehicle</English>
+            </Key>
+            <Key ID="STR_TunCon_CBA_enableShowIsInVehicleTooltip">
+                <Original>Enable displaying whether the player is inside vehicle</Original>
+                <English>Enable displaying whether the player is inside vehicle</English>
             </Key>
             <Key ID="STR_TunCon_CBA_enableShowStableVitals">
                 <Original>Enable showing stable vitals</Original>
@@ -257,29 +118,168 @@
                 <Original>Enable showing if player has stable or unstable vitals</Original>
                 <English>Enable showing if player has stable or unstable vitals</English>
             </Key>
-            <Key ID="STR_TunCon_isInVehicle">
-                <English> inside of a %1</English>
-                <Original> inside of a %1</Original>
+            <Key ID="STR_TunCon_CBA_enableShowingDistance">
+                <Original>Enable showing nearest unit distance</Original>
+                <English>Enable showing nearest unit distance</English>
+                <Japanese>付近の友軍距離表示を有効化</Japanese>
             </Key>
-            <Key ID="STR_TunCon_CBA_enableShowIsInVehicle">
-                <English>Enable showing player is in vehicle</English>
-                <Original>Enable showing player is in vehicle</Original>
+            <Key ID="STR_TunCon_CBA_enableShowingDistanceTooltip">
+                <Original>Enable showing closest friendlies distance</Original>
+                <English>Enable showing closest friendlies distance</English>
+                <Japanese>付近の友軍距離表示を有効化すると近くにいる味方までの距離を表示します</Japanese>
             </Key>
-            <Key ID="STR_TunCon_CBA_enableShowIsInVehicleTooltip">
-                <English>Enable displaying whether the player is inside vehicle</English>
-                <Original>Enable displaying whether the player is inside vehicle</Original>
+            <Key ID="STR_TunCon_CBA_enableShowingNearestUnit">
+                <Original>Enable showing nearest unit</Original>
+                <English>Enable showing nearest unit</English>
+                <Spanish>Activar mostrar el aliado mas cercano</Spanish>
+                <Japanese>付近の友軍情報表示を有効化</Japanese>
+            </Key>
+            <Key ID="STR_TunCon_CBA_enableShowingNearestUnitTooltip">
+                <Original>Enables showing if there is nearby friendly units</Original>
+                <English>Enables showing if there is nearby friendly units</English>
+                <Japanese>付近の友軍情報表示を有効化すると近くに味方がいるときにその情報を表示します</Japanese>
+            </Key>
+            <Key ID="STR_TunCon_CBA_enableUnconInfo">
+                <Original>Enable uncon info</Original>
+                <English>Enable uncon info</English>
+                <Spanish>Activar uncon info</Spanish>
+                <Japanese>アンコン インフォを有効化</Japanese>
+            </Key>
+            <Key ID="STR_TunCon_CBA_enableUnconInfoTooltip">
+                <Original>Enanbles uncon to know whats going around them. Own vitals and if friendlies nearby.</Original>
+                <English>Enanbles uncon to know whats going around them. Own vitals and if friendlies nearby.</English>
+                <Spanish>Permite que uncon sepa que pasa alrededor. Tus propias vitales y si hay aliados cerca</Spanish>
+                <Japanese>アンコン インフォを有効化すると気絶中に付近の友軍の有無や自分のバイタルを感じることができます。</Japanese>
+            </Key>
+            <Key ID="STR_TunCon_CBA_noFriends">
+                <Original>Text if no friendlies nearby and no vitals</Original>
+                <English>Text if no friendlies nearby and no vitals</English>
+                <Japanese>友軍不在でバイタル不安定時に表示するテキスト</Japanese>
+            </Key>
+            <Key ID="STR_TunCon_CBA_noFriendsTooltip">
+                <Original>Text what is shown when player has bad vitals and no friendlies nearby</Original>
+                <English>Text what is shown when player has bad vitals and no friendlies nearby</English>
+                <Japanese>プレイヤーの近辺に友軍が不在でかつバイタルが不安定(目覚める可能性が無い)時に表示するテキスト</Japanese>
+            </Key>
+            <Key ID="STR_TunCon_CBA_updateInterval">
+                <Original>Update interval</Original>
+                <English>Update interval</English>
+                <Japanese>更新間隔</Japanese>
+            </Key>
+            <Key ID="STR_TunCon_CBA_updateIntervalTooltip">
+                <Original>Time between text updates while unconscious</Original>
+                <English>Time between text updates while unconscious</English>
+                <Japanese>表示テキストの更新間隔。(秒)</Japanese>
+            </Key>
+            <Key ID="STR_TunCon_EH_failedTreatment">
+                <Original>%1 failed treatment %2 on %3</Original>
+                <English>%1 failed treatment %2 on %3</English>
+            </Key>
+            <Key ID="STR_TunCon_EH_failedTreatmentStructured">
+                <Original>%1 &lt;t color='#CC0000'&gt;failed&lt;/t&gt; treatment %2 on %3</Original>
+                <English>%1 &lt;t color='#CC0000'&gt;failed&lt;/t&gt; treatment %2 on %3</English>
+            </Key>
+            <Key ID="STR_TunCon_EH_startedTreatment">
+                <Original>%1 is %2 on your %3</Original>
+                <English>%1 is %2 on your %3</English>
+            </Key>
+            <Key ID="STR_TunCon_EH_succededTreatment">
+                <Original>%1 completed treatment %2 on %3</Original>
+                <English>%1 completed treatment %2 on %3</English>
+            </Key>
+            <Key ID="STR_TunCon_EH_succededTreatmentStructured">
+                <Original>%1 &lt;t color='#008000'&gt;completed&lt;/t&gt; treatment %2 on %3</Original>
+                <English>%1 &lt;t color='#008000'&gt;completed&lt;/t&gt; treatment %2 on %3</English>
+            </Key>
+            <Key ID="STR_TunCon_closestMedic">
+                <Original>The nearest medic is %1</Original>
+                <English>The nearest medic is %1</English>
+                <Spanish>El medico mas cercano es %1</Spanish>
+                <Japanese>最も近い衛生兵は %1 です</Japanese>
+            </Key>
+            <Key ID="STR_TunCon_closestUnit">
+                <Original>The closest friendly soldier is %1</Original>
+                <English>The closest friendly soldier is %1</English>
+                <Spanish>El aliado mas cercano es %1</Spanish>
+                <Japanese>最も近い友軍は %1 です</Japanese>
+            </Key>
+            <Key ID="STR_TunCon_closestUnitIsMedic">
+                <Original>%1 is medic and the nearest soldier</Original>
+                <English>%1 is medic and the nearest soldier</English>
+                <Spanish>El aliado mas cercano es %1 y es medico</Spanish>
+                <Japanese>最も近い友軍は %1 で衛生兵です</Japanese>
+            </Key>
+            <Key ID="STR_TunCon_firstLine">
+                <Original>You sense that</Original>
+                <English>You sense that</English>
+                <Spanish>Sientes que</Spanish>
+                <Japanese>あなたが感じていることは次の通り</Japanese>
+            </Key>
+            <Key ID="STR_TunCon_hasPulse">
+                <Original>You still have pulse</Original>
+                <English>You still have pulse</English>
+                <Spanish>Todavia tienes pulsa</Spanish>
+                <Japanese>あなたはまだ脈拍がある</Japanese>
+            </Key>
+            <Key ID="STR_TunCon_hasStableVitals">
+                <Original>You have stable vitals (you can wake up)</Original>
+                <English>You have stable vitals (you can wake up)</English>
+                <Spanish>Tienes las vitales estables (Puedes despertar)</Spanish>
+                <Japanese>あなたのバイタルは安定している (目覚める可能性がある)</Japanese>
+            </Key>
+            <Key ID="STR_TunCon_hasepinEphrine">
+                <Original>You have epinephrine in your system (Significantly higher chance of waking up)</Original>
+                <English>You have epinephrine in your system (Significantly higher chance of waking up)</English>
+                <Spanish>Tienes epinefrina en tu sistema (tus probabilidades de despertar aumentan)</Spanish>
+                <Japanese>あなたはアドレナリンを打たれている (目覚める確率が上がっている)</Japanese>
+            </Key>
+            <Key ID="STR_TunCon_inCardiacArrest">
+                <Original>You are in cardiac arrest</Original>
+                <English>You are in cardiac arrest</English>
+                <Spanish>Estas en parada cardiaca</Spanish>
+                <Japanese>あなたは心停止している</Japanese>
             </Key>
             <Key ID="STR_TunCon_insideVehicle">
-                <English>You are inside %1</English>
                 <Original>You are inside %1</Original>
+                <English>You are inside %1</English>
             </Key>
-            <Key ID="STR_TunCon_CBA_enableShowIsInVehicleOthers">
-                <English>Enable showing others are in vehicle</English>
-                <Original>Enable showing others are in vehicle</Original>
+            <Key ID="STR_TunCon_isBeingHelpedText">
+                <Original>You are being helped!</Original>
+                <English>You are being helped!</English>
+                <Spanish>¡Te estan ayudando!</Spanish>
+                <Japanese>あなたは治療を受けている!</Japanese>
             </Key>
-            <Key ID="STR_TunCon_CBA_enableShowIsInVehicleOthersTooltip">
-                <English>Enable displaying whether the friendly units are inside vehicle</English>
-                <Original>Enable displaying whether the friendly units are inside vehicle</Original>
+            <Key ID="STR_TunCon_isBleeding">
+                <Original>You are bleeding</Original>
+                <English>You are bleeding</English>
+                <Spanish>Estas sangrando</Spanish>
+                <Japanese>あなたは出血している</Japanese>
+            </Key>
+            <Key ID="STR_TunCon_isInVehicle">
+                <Original>inside of a %1</Original>
+                <English>inside of a %1</English>
+            </Key>
+            <Key ID="STR_TunCon_noFriends">
+                <Original>There are no friendlies nearby</Original>
+                <English>There are no friendlies nearby</English>
+                <Spanish>No hay aliados cerca</Spanish>
+                <Japanese>友軍は付近に居ないようです</Japanese>
+            </Key>
+            <Key ID="STR_TunCon_noMedicsNear">
+                <Original>but no medics nearby</Original>
+                <English>but no medics nearby</English>
+                <Spanish>pero no hay ningun medico cerca</Spanish>
+                <Japanese>しかし付近に衛生兵はいません</Japanese>
+            </Key>
+            <Key ID="STR_TunCon_notStableVitals">
+                <Original>You don't have stable vitals (This prevents you from waking up)</Original>
+                <English>You don't have stable vitals (This prevents you from waking up)</English>
+                <Spanish>No tienes las vitales estables (No puedes despertar)</Spanish>
+                <Japanese>あなたのバイタルは安定していない (目覚めることは出来ない)</Japanese>
+            </Key>
+            <Key ID="STR_TunCon_treatments">
+                <Original>Treatments:</Original>
+                <English>Treatments:</English>
             </Key>
         </Container>
     </Package>

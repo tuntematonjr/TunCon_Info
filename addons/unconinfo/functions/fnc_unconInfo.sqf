@@ -21,6 +21,22 @@
 private _text = localize "STR_TunCon_firstLine" + "<br/>";
 private _bleeding = ace_player getVariable ["ace_medical_woundBleeding", 0];
 private _hasStableVitals = [ace_player] call ace_medical_status_fnc_hasStableVitals;
+private _drugs = [ace_player] call ace_medical_status_fnc_getAllMedicationCount;
+private _hasEpi = false;
+// private _hasMorphine = false;
+// private _hasPils = false;
+
+{
+	_x params ["_name"];
+
+	if (_name == "epinephrine") then {_hasEpi = true;};
+	// switch (toLower _name) do {
+	// 	case ("epinephrine"): {_hasEpi = true;};
+	// 	case ("morphine"): {_hasMorphine = true;};
+	// 	case ("painkillers"): {_hasPils = true;};
+	// 	default {};
+	// };
+} forEach _drugs;
 
 if (GVAR(enableShowBleeding) && _bleeding > 0) then {
 	_text = _text + localize "STR_TunCon_isBleeding" + "<br/>";
@@ -41,7 +57,7 @@ if (ace_player getVariable ["ace_medical_inCardiacArrest", false]) then {
 			_text = _text + localize "STR_TunCon_hasStableVitals" + "<br/>";
 		};
 
-		if (GVAR(enableShowEpinephrine) && {[ace_player, "Epinephrine"] call ace_medical_status_fnc_getMedicationCount > 0}) then {
+		if (GVAR(enableShowEpinephrine) && {_hasEpi}) then {
 			_text = _text + localize "STR_TunCon_hasepinEphrine" + "<br/>";
 		};
 	} else {
@@ -81,7 +97,7 @@ if (GVAR(allowNearestUnit)) then {
 
 		if ([_unit] call ace_common_fnc_isMedic && {_distance <= _closestMedicDistance}) then {
 			_closestMedic = _unit;
-			_closestMedicDistance = round _distance;           
+			_closestMedicDistance = round _distance;
 		};
 	} forEach _nearUnits;
 
@@ -92,7 +108,7 @@ if (GVAR(allowNearestUnit)) then {
 		private _closestUnitInVehicleText = "";
 		if (_closestUnitInVehicle) then {
 			private _vehicleName = _closestUnitVehicle getVariable ["displayName", getText (configOf _closestUnitVehicle >> "displayName")];
-			_closestUnitInVehicleText = format [localize "STR_TunCon_isInVehicle", _vehicleName];;
+			_closestUnitInVehicleText = format [localize "STR_TunCon_isInVehicle", _vehicleName];
 		};
 		
 		if (_closestUnit isEqualTo _closestMedic) then {
@@ -152,7 +168,7 @@ _text = "<t size='"+ TEXTSIZE_NORMAL +"'>"+_text+"</t>";
 
 private _treatmentList = GVAR(treatments);
 if (GVAR(enableShowDetailedTreatment) && {_treatmentList isNotEqualTo []} && {((_treatmentList select -1) select 1) + GVAR(detailedTreatmentDelay) <= _cbaTime}) then {
-	_text = _text + "<br/>" + "<t size='"+ TEXTSIZE_NORMAL +"'>" + "Treatments:" + "</t>";
+	_text = _text + "<br/>" + "<t size='"+ TEXTSIZE_NORMAL +"'>" + localize "STR_TunCon_treatments"  + "</t>";
 	{
 		_x params [ "_treatmenText", "_time"];
 		if (_time + GVAR(detailedTreatmentDelay) <= _cbaTime) then {
