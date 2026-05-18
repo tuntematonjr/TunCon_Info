@@ -1,7 +1,6 @@
 /*
  * Author: [Tuntematon]
- * [Description]
- * 
+ * Builds and displays unconscious info text for the player
  *
  * Arguments:
  * None
@@ -10,15 +9,15 @@
  * None
  *
  * Example:
- * [] call tuncon_unconinfo_fnc_unconinfo
+ * [] call tunuti_unconinfo_fnc_unconInfo
  */
+
 #include "script_component.hpp"
 
 #define TEXTSIZE_NORMAL	"1.75"
 #define TEXTSIZE_SMALL	"1.25"
 
-
-private _text = localize "STR_TunCon_firstLine" + "<br/>";
+private _texts = [localize "STR_TunCon_firstLine"];
 private _bleeding = ace_player getVariable ["ace_medical_woundBleeding", 0];
 private _hasStableVitals = [ace_player] call ace_medical_status_fnc_hasStableVitals;
 private _drugs = [ace_player] call ace_medical_status_fnc_getAllMedicationCount;
@@ -39,30 +38,46 @@ private _hasEpi = false;
 } forEach _drugs;
 
 if (GVAR(enableShowBleeding) && _bleeding > 0) then {
-	_text = _text + localize "STR_TunCon_isBleeding" + "<br/>";
+	_texts pushBack localize "STR_TunCon_isBleeding";
+};
+
+if (GVAR(enableShowTriage)) then {
+	private _triageStatus = [ace_player] call ace_medical_treatment_fnc_getTriageStatus;
+	if ((_triageStatus select 0) isNotEqualTo 0) then {
+		_texts pushBack format [localize "STR_TunCon_triageStatus", _triageStatus select 1];
+	};
 };
 
 //Heart rate/
 if (ace_player getVariable ["ace_medical_inCardiacArrest", false]) then {
 	if (GVAR(enableShowCardiacArrest)) then {
-		_text = _text + localize "STR_TunCon_inCardiacArrest" + "<br/>";
+		_texts pushBack localize "STR_TunCon_inCardiacArrest";
 	};
 } else {
 	if (GVAR(enableShowHeartRate) && {ace_player getVariable ["ace_medical_heartRate", 0] > 0}) then {
-		_text = _text + localize "STR_TunCon_hasPulse" + "<br/>";
+		_texts pushBack localize "STR_TunCon_hasPulse";
 	};
 
 	if (_hasStableVitals) then {
 		if (GVAR(enableShowStableVitals)) then {
-			_text = _text + localize "STR_TunCon_hasStableVitals" + "<br/>";
+			_texts pushBack localize "STR_TunCon_hasStableVitals";
 		};
 
-		if (GVAR(enableShowEpinephrine) && {_hasEpi}) then {
-			_text = _text + localize "STR_TunCon_hasepinEphrine" + "<br/>";
+		if (GVAR(enableShowEpinephrine) && {_hasEpi} && {!GVAR(enableShowWakeUpChance)}) then {
+			_texts pushBack localize "STR_TunCon_hasepinEphrine";
+		};
+
+		if (GVAR(enableShowWakeUpChance)) then {
+			([ace_player] call FUNC(epiEstimation)) params ["_wakeChancePerCheck", "_epiBoostCheckRate", "_wakeChanceNextMinute", "_checksPerMinute"];
+			_texts pushBack format [localize "STR_TunCon_wakeUpChance", round (_wakeChancePerCheck * 10000) / 100, round (_checksPerMinute * 100) / 100];
+			_texts pushBack format [localize "STR_TunCon_wakeUpNextMinute", round (_wakeChanceNextMinute * 10000) / 100];
+			if (_hasEpi) then {
+				_texts pushBack format [localize "STR_TunCon_epiBoost", round (_epiBoostCheckRate * 100) / 100];
+			};
 		};
 	} else {
 		if (GVAR(enableShowStableVitals)) then {
-			_text = _text + localize "STR_TunCon_notStableVitals" + "<br/>";
+			_texts pushBack localize "STR_TunCon_notStableVitals";
 		};
 	};
 };
@@ -71,7 +86,7 @@ if (GVAR(enableShowIsInVehicle)) then {
 	private _closestUnitVehicle = vehicle ace_player;
 	if (_closestUnitVehicle isNotEqualTo ace_player) then {
 		private _vehicleName = _closestUnitVehicle getVariable ["displayName", getText (configOf _closestUnitVehicle >> "displayName")];
-		_text = _text + (format[localize "STR_TunCon_insideVehicle", _vehicleName]) + "<br/>";
+		_texts pushBack format[localize "STR_TunCon_insideVehicle", _vehicleName];
 	};
 };
 
@@ -80,14 +95,20 @@ if (GVAR(allowNearestUnit)) then {
 	private _distance = GVAR(unconInfoNearestUnitDistance);
 	private _pos = ASLToAGL getPosASL ace_player;
 	private _nearUnits = ([_pos, _distance, _distance, 0, false] nearEntities [["CAManBase"], false, true, true]) - [ace_player];
-	FILTER(_nearUnits,playerSide isEqualTo side _x && [_x] call ace_common_fnc_isAwake && !(unitIsUAV _x));
+	//FILTER(_nearUnits,playerSide isEqualTo side _x && [_x] call ace_common_fnc_isAwake && !(unitIsUAV _x));
 	private _closestUnit = objNull;
 	private _closestMedic = objNull;
 	private _closestUnitDistance = _distance;
 	private _closestMedicDistance = _distance;
 	private _nearestUnitDistanceAllowed = GVAR(allowNearestUnitDistanceShown);
+	private "_text";
 	{
 		private _unit = _x;
+		if !(playerSide isEqualTo side _unit &&
+			[_unit] call ace_common_fnc_isAwake && 
+			!(unitIsUAV _unit)
+		) exitWith {};
+		
 		private _distance = ace_player distance _unit;
 		
 		if (_distance <= _closestUnitDistance) then {
@@ -95,7 +116,7 @@ if (GVAR(allowNearestUnit)) then {
 			_closestUnitDistance = round _distance;
 		};
 
-		if ([_unit] call ace_common_fnc_isMedic && {_distance <= _closestMedicDistance}) then {
+		if (_distance <= _closestMedicDistance && {[_unit] call ace_common_fnc_isMedic}) then {
 			_closestMedic = _unit;
 			_closestMedicDistance = round _distance;
 		};
@@ -112,7 +133,7 @@ if (GVAR(allowNearestUnit)) then {
 		};
 		
 		if (_closestUnit isEqualTo _closestMedic) then {
-			_text = _text + (format [localize "STR_TunCon_closestUnitIsMedic", name _closestUnit]);
+			_text = (format [localize "STR_TunCon_closestUnitIsMedic", name _closestUnit]);
 			
 			if (_closestUnitInVehicle && _showInVehicleAllowed) then {
 				_text = _text + " " + _closestUnitInVehicleText;
@@ -123,7 +144,7 @@ if (GVAR(allowNearestUnit)) then {
 			};
 		} else {
 			private _closestUnitText = (format [localize "STR_TunCon_closestUnit", name _closestUnit]);
-			private _closestMedicText = format [localize "STR_TunCon_closestMedic", name _closestMedic];
+			private "_closestMedicText";
 
 			if (_closestUnitInVehicle && _showInVehicleAllowed) then {
 				_closestUnitText = _closestUnitText + " " + _closestUnitInVehicleText;
@@ -138,6 +159,7 @@ if (GVAR(allowNearestUnit)) then {
 			} else {
 				private _closestMedicVehicle = vehicle _closestMedic;
 				private _closestMedicInVehicle = _closestMedicVehicle isNotEqualTo _closestMedic;
+				_closestMedicText = format [localize "STR_TunCon_closestMedic", name _closestMedic];
 				
 				if (_closestMedicInVehicle && _showInVehicleAllowed) then {
 					private _vehicleName = _closestMedicVehicle getVariable ["displayName", getText (configOf _closestMedicVehicle >> "displayName")];
@@ -148,22 +170,24 @@ if (GVAR(allowNearestUnit)) then {
 					_closestMedicText = _closestMedicText + format[" (%1m)", _closestMedicDistance];
 				};
 			};
-			_text = _text + _closestUnitText + "<br/>" + _closestMedicText;
+			_text = _closestUnitText + "<br/>" + _closestMedicText;
 		};
 	} else {
-		_text = _text + localize "STR_TunCon_noFriends";
+		_text = localize "STR_TunCon_noFriends";
 
 		if (_bleeding > 0 && !(_hasStableVitals)) then {
 			_text = _text + "<br/>" + GVAR(noFriendliesNearbyText);
 		};
 	};
+	_texts pushBack _text;
 };
 
 private _cbaTime = cba_missionTime;
 if (GVAR(isBeingHelpedTime) > _cbaTime && !GVAR(enableShowDetailedTreatment)) then {
-	_text = _text + "<br/>" + localize "STR_TunCon_isBeingHelpedText";
+	_texts pushBack localize "STR_TunCon_isBeingHelpedText";
 };
 
+private _text = _texts joinString "<br/>";
 _text = "<t size='"+ TEXTSIZE_NORMAL +"'>"+_text+"</t>";
 
 private _treatmentList = GVAR(treatments);

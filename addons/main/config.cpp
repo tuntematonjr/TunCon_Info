@@ -22,7 +22,7 @@ class CfgMods {
         
         author = "Tuntematon";                    // probably shown somewhere in the mods menu, but probably ignored by CBA/HEMTT
 
-        picture         = "x\tuncon\addons\main\\afilogo.paa";       // Picture displayed from the expansions menu. Optimal size is 2048x1024
+        picture         = "x\data\afilogo.paa";       // Picture displayed from the expansions menu. Optimal size is 2048x1024
         hideName        = "false";              // Hide the extension name in main menu and extension menu
         hidePicture     = "false";              // Hide the extension picture in the extension menu
 

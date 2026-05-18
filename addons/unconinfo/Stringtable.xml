@@ -19,8 +19,8 @@
                 <English>Delay before treatment appears in the treatment list while unconscious</English>
             </Key>
             <Key ID="STR_TunCon_CBA_distanceToLookFriendlies">
-                <Original>Distance for looking closest friendly</Original>
-                <English>Distance for looking closest friendly</English>
+                <Original>Distance to search for closest friendly</Original>
+                <English>Distance to search for closest friendly</English>
                 <Japanese>情報表示する友軍までの距離</Japanese>
             </Key>
             <Key ID="STR_TunCon_CBA_distanceToLookFriendliesTooltip">
@@ -118,6 +118,22 @@
                 <Original>Enable showing if player has stable or unstable vitals</Original>
                 <English>Enable showing if player has stable or unstable vitals</English>
             </Key>
+            <Key ID="STR_TunCon_CBA_enableShowTriage">
+                <Original>Enable Show Triage</Original>
+                <English>Enable Show Triage</English>
+            </Key>
+            <Key ID="STR_TunCon_CBA_enableShowTriageTooltip">
+                <Original>Enable showing what triage status has been assigned to player</Original>
+                <English>Enable showing what triage status has been assigned to player</English>
+            </Key>
+            <Key ID="STR_TunCon_CBA_enableShowWakeUpChance">
+                <Original>Enable showing wake-up chance</Original>
+                <English>Enable showing wake-up chance</English>
+            </Key>
+            <Key ID="STR_TunCon_CBA_enableShowWakeUpChanceTooltip">
+                <Original>Enable showing extensive wake-up chance information</Original>
+                <English>Enable showing extensive wake-up chance information</English>
+            </Key>
             <Key ID="STR_TunCon_CBA_enableShowingDistance">
                 <Original>Enable showing nearest unit distance</Original>
                 <English>Enable showing nearest unit distance</English>
@@ -135,8 +151,8 @@
                 <Japanese>付近の友軍情報表示を有効化</Japanese>
             </Key>
             <Key ID="STR_TunCon_CBA_enableShowingNearestUnitTooltip">
-                <Original>Enables showing if there is nearby friendly units</Original>
-                <English>Enables showing if there is nearby friendly units</English>
+                <Original>Enables showing if there are nearby friendly units</Original>
+                <English>Enables showing if there are nearby friendly units</English>
                 <Japanese>付近の友軍情報表示を有効化すると近くに味方がいるときにその情報を表示します</Japanese>
             </Key>
             <Key ID="STR_TunCon_CBA_enableUnconInfo">
@@ -146,14 +162,14 @@
                 <Japanese>アンコン インフォを有効化</Japanese>
             </Key>
             <Key ID="STR_TunCon_CBA_enableUnconInfoTooltip">
-                <Original>Enanbles uncon to know whats going around them. Own vitals and if friendlies nearby.</Original>
-                <English>Enanbles uncon to know whats going around them. Own vitals and if friendlies nearby.</English>
+                <Original>Enables uncon to know what's going around them. Own vitals and if friendlies nearby.</Original>
+                <English>Enables uncon to know what's going around them. Own vitals and if friendlies nearby.</English>
                 <Spanish>Permite que uncon sepa que pasa alrededor. Tus propias vitales y si hay aliados cerca</Spanish>
                 <Japanese>アンコン インフォを有効化すると気絶中に付近の友軍の有無や自分のバイタルを感じることができます。</Japanese>
             </Key>
             <Key ID="STR_TunCon_CBA_noFriends">
-                <Original>Text if no friendlies nearby and no vitals</Original>
-                <English>Text if no friendlies nearby and no vitals</English>
+                <Original>Text shown when no friendlies nearby and vitals are unstable</Original>
+                <English>Text shown when no friendlies nearby and vitals are unstable</English>
                 <Japanese>友軍不在でバイタル不安定時に表示するテキスト</Japanese>
             </Key>
             <Key ID="STR_TunCon_CBA_noFriendsTooltip">
@@ -208,6 +224,10 @@
                 <English>%1 is medic and the nearest soldier</English>
                 <Spanish>El aliado mas cercano es %1 y es medico</Spanish>
                 <Japanese>最も近い友軍は %1 で衛生兵です</Japanese>
+            </Key>
+            <Key ID="STR_TunCon_epiBoost">
+                <Original>Epi boost: +%1%%</Original>
+                <English>Epi boost: +%1%%</English>
             </Key>
             <Key ID="STR_TunCon_firstLine">
                 <Original>You sense that</Original>
@@ -280,6 +300,18 @@
             <Key ID="STR_TunCon_treatments">
                 <Original>Treatments:</Original>
                 <English>Treatments:</English>
+            </Key>
+            <Key ID="STR_TunCon_triageStatus">
+                <Original>Your triage status is: %1</Original>
+                <English>Your triage status is: %1</English>
+            </Key>
+            <Key ID="STR_TunCon_wakeUpChance">
+                <Original>Wake-up: %1%%/check | %2 checks/min</Original>
+                <English>Wake-up: %1%%/check | %2 checks/min</English>
+            </Key>
+            <Key ID="STR_TunCon_wakeUpNextMinute">
+                <Original>Wake-up next 1 min: %1%%</Original>
+                <English>Wake-up next 1 min: %1%%</English>
             </Key>
         </Container>
     </Package>

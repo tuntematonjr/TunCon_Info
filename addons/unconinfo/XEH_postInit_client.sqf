@@ -9,6 +9,7 @@
 			GVAR(treatments) = [];
 
 			[{
+				params ["_args", "_handle"];
 				private _player = player;
 				if (GVAR(isBeingHelped)) then {
 					GVAR(isBeingHelpedTime) = cba_missionTime + 20;

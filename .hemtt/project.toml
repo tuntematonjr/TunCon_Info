@@ -5,24 +5,25 @@ mainprefix = "x"
 
 [files]
 include = [
-    "mod.cpp",
-    "data/**",
+	"mod.cpp",
+	"data/**",
 ]
 
 [version]
 git_hash = 0 
 
 [binarize]
-enabled = false 
+enabled = true 
 
 [lint.sqf]
-enabled = false
+enabled = true
 
 [hemtt.launch.default]
 workshop = [
     "450814997",
     "463939057",
     "623475643",
+    "3499977893", # Advanced tool thing
 ]
 parameters = [
     "-skipIntro",           # These parameters are passed to the Arma 3 executable

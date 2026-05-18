@@ -1,7 +1,6 @@
 /*
  * Author: [Tuntematon]
- * [Description]
- * 
+ * Clears unconscious info display when enabled
  *
  * Arguments:
  * None
@@ -10,8 +9,9 @@
  * None
  *
  * Example:
- * [] call tuncon_unconinfo_fnc_hideMessage
+ * [] call tunuti_unconinfo_fnc_hideMessage
  */
+
 #include "script_component.hpp"
 
 if (GVAR(enableUnconInfo) && player getVariable ["ACE_isUnconscious", false]) then {
