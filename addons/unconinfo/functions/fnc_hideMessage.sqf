@@ -9,7 +9,7 @@
  * None
  *
  * Example:
- * [] call tunuti_unconinfo_fnc_hideMessage
+ * [] call tuncon_unconinfo_fnc_hideMessage
  */
 
 #include "script_component.hpp"

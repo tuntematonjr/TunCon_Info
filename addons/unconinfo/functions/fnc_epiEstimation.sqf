@@ -9,7 +9,7 @@
  * [Wake-up chance per check, Epinephrine check-rate boost percent, Chance to wake in next minute, Checks per minute, Base checks per minute] <ARRAY>
  *
  * Example:
- * [ace_player] call tunuti_unconinfo_fnc_epiEstimation
+ * [ace_player] call tuncon_unconinfo_fnc_epiEstimation
  */
 
 #include "script_component.hpp"

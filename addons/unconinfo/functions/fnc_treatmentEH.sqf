@@ -13,7 +13,7 @@
  * None
  *
  * Example:
- * [1, medic, patient, "Head", "BasicBandage"] call tunuti_unconinfo_fnc_treatmentEH
+ * [1, medic, patient, "Head", "BasicBandage"] call tuncon_unconinfo_fnc_treatmentEH
  */
 
 #include "script_component.hpp"
