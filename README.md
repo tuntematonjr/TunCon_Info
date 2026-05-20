@@ -21,7 +21,7 @@ Everything can be configured through CBA Settings.
 - CBA_A3
 
 
-[Github](https://github.com/tuntematonjr/TunCon_Info)
+[Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3029597297)
 
 Do not reupload this to steam workshop.
 
